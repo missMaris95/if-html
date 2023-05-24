@@ -16,6 +16,7 @@
       alt="Html-5-icon"
     />
     <img src="imege/Html.jpg" height="300" width="300" alt="Html icon" />
+    <hr />
     <ol>
       <li>
         Знакомство с Web
@@ -41,6 +42,7 @@
         </ul>
       </li>
       <br />
+
       <li>
         Погружение в HTML-разметку
         <ul>
@@ -53,6 +55,7 @@
         </ul>
       </li>
     </ol>
+
     <table border="2" width="50%">
       <thead>
         <tr>
@@ -99,6 +102,62 @@
         </tr>
       </tbody>
     </table>
-    <hr />
+
+    <fieldset>
+      <legend>My first form</legend>
+
+      <form action="/" method="get">
+        <label for="name">Name </label><br>
+        <input id="name" type="text" name="name" placeholder="Name" /><br>
+        <label for="email">Email </label><br>
+        <input id="email" type="email" name="email" /><br>
+        <label for="password">Password</label><br>
+        <input id="password" type="password" name="password" />
+
+      <p>
+        <label for="level">Your programming level</label><br />
+        <input id="level" type="range" name="level" min="1" max="10" />
+      </p>
+
+      <p>What does HTML stand for?</p>
+        <input id="answer1" type="checkbox"  name="answer1" value="1" />
+      <label for="answer1">Hyperlinks and Text Markup Language</label><br />
+
+        <input id="answer2" type="checkbox" name="answer2" value="2" />
+      <label for="answer2">Home Tool Markup Language</label><br />
+
+        <input id="answer3" type="checkbox" name="answer3" value="3" />
+      <label for="answer3"> Hyper Text Markup Language</label>
+
+        <p>What does HTML stand for?</p>
+        <input id="answer 1" type="radio"  name="answer" value="1" />
+        <label for="answer 1">Hyperlinks and Text Markup Language</label><br />
+
+        <input id="answer 2" type="radio" name="answer" value="2" />
+        <label for="answer 2">Home Tool Markup Language</label><br />
+
+        <input id="answer 3" type="radio" name="answer" value="3" />
+        <label for="answer 3"> Hyper Text Markup Language</label>
+
+      <p>
+        <label for="comment">Comment</label><br />
+        <textarea
+          id="comment"
+          name="user_comment"
+          placeholder="Comment"
+          maxlength="500"
+        ></textarea>
+      </p>
+
+        <label for="1">What does HTML stand for?</label> <br>
+        <select id="1" name="1">
+          <option disabled selected>Your answer</option>
+          <option value="1">Hyperlinks and Text Markup Language</option>
+          <option value="2">Home Tool Markup Language</option>
+          <option value="3">Hyper Text Markup Language</option>
+        </select><br/>
+
+      <button>Send</button>
+    </fieldset>
   </body>
 </html>
