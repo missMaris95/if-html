@@ -2,162 +2,34 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="IT" />
-    <meta name="keywords" content="HTML, CSS, JS" />
-    <meta name="author" content="Maria Hurlenia" />
-    <meta name="viewport" content="width=device-width, intial-scale =1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Title</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
-    <img
-      src="https://f.vividscreen.info/soft/9a7768b82a45877f968255b790ce1aa2/Html-5-1440x1280.jpg"
-      height="300"
-      width="300"
-      alt="Html-5-icon"
-    />
-    <img src="imege/Html.jpg" height="300" width="300" alt="Html icon" />
-    <hr />
-    <ol>
-      <li>
-        Знакомство с Web
-        <ul>
-          <li>Краткая история Web и как устроен интернет</li>
-          <li>Как устроен браузер и как он получает страницы по сети</li>
-          <li>Что такое Git</li>
-          <li>Создание первого репозитория</li>
-          <li>О файле .gitignore</li>
-        </ul>
-      </li>
-      <br />
-      <li>
-        HTML-вёрстка – первые шаги
-        <ul>
-          <li>Настройка рабочей среды</li>
-          <li>Краткая история HTML</li>
-          <li>Типы тегов и атрибуты</li>
-          <li>Теги для работы с текстом</li>
-          <li>Создание собственной страницы</li>
-          <li>Основы ветвления в Git</li>
-          <li>Создание pull request на GitHub</li>
-        </ul>
-      </li>
-      <br />
-
-      <li>
-        Погружение в HTML-разметку
-        <ul>
-          <li>Мета-теги</li>
-          <li>Мнемоники</li>
-          <li>Теги для работы со списками</li>
-          <li>Теги для работы с таблицами</li>
-          <li>Теги для работы с формами</li>
-          <li>div и span</li>
-        </ul>
-      </li>
-    </ol>
-
-    <table border="2" width="50%">
-      <thead>
-        <tr>
-          <th>Teg</th>
-          <th>Description</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>&pr;table&sc;</td>
-          <td>Defines a table</td>
-        </tr>
-        <tr>
-          <td>&pr;tr&sc;</td>
-          <td>Defines a row table</td>
-        </tr>
-        <tr>
-          <td>&pr;th&sc;</td>
-          <td rowspan="2">
-            Defines a &rdquo;header cell&rdquo;/&rdquo;cell&rdquo; in a table
-          </td>
-        </tr>
-        <tr>
-          <td>&pr;td&sc;</td>
-        </tr>
-        <tr>
-          <td colspan="2">Rarely used</td>
-        </tr>
-        <tr>
-          <td>&pr;caption&sc;</td>
-          <td>Defines a table caption</td>
-        </tr>
-        <tr>
-          <td>&pr;thead&sc;</td>
-          <td>Groups the header content in a table</td>
-        </tr>
-        <tr>
-          <td>&pr;tbody&sc;</td>
-          <td>Groups the body content in a table</td>
-        </tr>
-        <tr>
-          <td>&pr;tfoot&sc;</td>
-          <td>Groups the footer content in a table</td>
-        </tr>
-      </tbody>
-    </table>
-    <br>
-
-      <form action="/" method="get">
-        <fieldset>
-          <legend>My first form</legend>
-        <label for="name">Name </label><br>
-        <input required id="name" type="text" name="name" placeholder="Name" /><br>
-        <label for="email">Email </label><br>
-        <input required id="email" type="email" name="email" /><br>
-        <label for="password">Password</label><br>
-        <input required id="password" type="password" name="password" />
-
-      <p>
-        <label for="level">Your programming level</label><br />
-        <input id="level" type="range" name="level" min="1" max="10" />
-      </p>
-
-      <p>What does HTML stand for?</p>
-        <input id="answer1" type="checkbox"  name="answer1" value="1" />
-      <label for="answer1">Hyperlinks and Text Markup Language</label><br />
-
-        <input id="answer2" type="checkbox" name="answer2" value="2" />
-      <label for="answer2">Home Tool Markup Language</label><br />
-
-        <input id="answer3" type="checkbox" name="answer3" value="3" />
-      <label for="answer3"> Hyper Text Markup Language</label>
-
-        <p>What does HTML stand for?</p>
-        <input id="answer 1" type="radio"  name="answer" value="1" />
-        <label for="answer 1">Hyperlinks and Text Markup Language</label><br />
-
-        <input id="answer 2" type="radio" name="answer" value="2" />
-        <label for="answer 2">Home Tool Markup Language</label><br />
-
-        <input id="answer 3" type="radio" name="answer" value="3" />
-        <label for="answer 3"> Hyper Text Markup Language</label>
-
-      <p>
-        <label for="comment">Comment</label><br />
-        <textarea
-          id="comment"
-          name="user_comment"
-          placeholder="Comment"
-          maxlength="500"
-        ></textarea>
-      </p>
-
-        <label for="1">What does HTML stand for?</label> <br>
-        <select id="1" name="1">
-          <option disabled selected>Your answer</option>
-          <option value="1">Hyperlinks and Text Markup Language</option>
-          <option value="2">Home Tool Markup Language</option>
-          <option value="3">Hyper Text Markup Language</option>
-        </select><br/>
-
-      <button>Send</button>
-    </fieldset>
+    <div class="all">
+      <div class="offer">
+        <h1>What do we offer</h1>
+        <img class="highlight" src="./images/highlight.png" alt="highlight" />
+      </div>
+      <div class="all-block">
+        <div>
+          <img src="./images/vector.png" alt="vector" />
+          <p>Support 24/7</p>
+        </div>
+        <div>
+          <img src="./images/vector1.png" alt="vector1" />
+          <p>Communicate directly</p>
+        </div>
+        <div>
+          <img src="./images/vector2.png" alt="vector2" />
+          <p>Book online</p>
+        </div>
+        <div>
+          <img src="./images/vector3.png" alt="vector3" />
+          <p>Real guest reviews</p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

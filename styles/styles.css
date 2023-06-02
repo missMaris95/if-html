@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+}
+
+body {
+  color: #383838;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  height: 47px;
+  font-family: "Roboto", sans-serif;
+}
+
+.highlight {
+  padding: 20px 620px 0 620px;
+}
+
+.offer {
+  display: block;
+  margin: 120px 0 84px 0;
+}
+
+.all-block {
+  width: 1200px;
+  height: 184px;
+  margin: 0 104px 120px ;
+}
+
+.all-block div {
+  display: inline-block;
+  height: 184px;
+  width: 296px;
+}
+
+.all-block div img {
+  margin: 0 102px;
+}
+
+.all-block p {
+  text-align: center;
+  font-size: 24px;
+}
