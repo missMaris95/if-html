@@ -1,48 +1,102 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 * {
   margin: 0;
 }
 
 body {
+  background-color: #e5e5e5;
   color: #383838;
 }
 
-h1 {
-  text-align: center;
-  font-size: 40px;
-  height: 47px;
+.all {
+  background-color: white;
   font-family: "Roboto", sans-serif;
+  margin: 0 auto;
+  width: 360px;
+  height: 641px;
+  border: 1px solid;
 }
-
-.highlight {
-  padding: 20px 620px 0 620px;
+h1 {
+  font-family: "Roboto", sans-serif;
+  width: 214px;
+  height: 33px;
+  font-size: 28px;
 }
 
 .offer {
-  display: block;
-  margin: 120px 0 84px 0;
+  margin: 24px 0 32px 0;
+  display: flex;
+  justify-content: center;
 }
 
 .all-block {
-  width: 1200px;
-  height: 184px;
-  margin: 0 104px 120px ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 15px;
 }
 
-.all-block div {
-  display: inline-block;
-  height: 184px;
-  width: 296px;
+.all-block-support {
+  height: 104px;
+  width: 214px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
 }
 
-.all-block div img {
-  margin: 0 102px;
+.all-block-support img {
+  height: 64px;
+  width: 53px;
 }
 
-.all-block p {
-  font-family: 'Roboto', sans-serif;
-  text-align: center;
-  font-size: 24px;
+.all-block-communicate {
+  height: 104px;
+  width: 214px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
 }
+.all-block-communicate img {
+  height: 58px;
+  width: 58px;
+}
+
+.all-block-book {
+  height: 104px;
+  width: 214px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.all-block-book img {
+  height: 54px;
+  width: 70px;
+}
+
+.all-block-real-guest {
+  height: 104px;
+  width: 214px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.all-block-real-guest img {
+  height: 58px;
+  width: 64px;
+}
+
