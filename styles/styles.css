@@ -1,5 +1,51 @@
-@import url('./fonts.css');
+@import url("./fonts.css");
 
-body{
-    font-family: 'Roboto', sans-serif;
+body {
+   background-color: #e5e5e5;
+}
+
+.container {
+  height: 203px;
+  width: 360px;
+  background-color: #10367c;
+  margin: 0 auto;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+}
+
+.title img {
+  margin-top: 40px;
+}
+
+.menu{
+    height: 18px;
+    width: 225px;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    color: #ffffff;
+    text-decoration: underline;
+    margin: 40px auto 32px;
+}
+
+a{
+    color: #ffffff;
+}
+
+a:hover{
+    color: #a9e560;
+}
+
+.address{
+    width: 219px;
+    height: 14px;
+    margin: 0 auto;
+    color: #ffffff;
+    font-size: 12px;
+    font-family: system-ui;
+    text-align: center;
 }
