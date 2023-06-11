@@ -1,44 +1,117 @@
-* {
-  margin: 0;
-}
+@import url("./fonts.css");
 
-body {
-  color: #383838;
-}
-
-h1 {
-  text-align: center;
-  font-size: 40px;
-  height: 47px;
-  font-family: "Roboto", sans-serif;
-}
-
-.highlight {
-  padding: 20px 620px 0 620px;
+.container-all {
+  max-width: 1440px;
+  width: 100%;
+  height: 569px;
 }
 
 .offer {
-  display: block;
-  margin: 120px 0 84px 0;
+  font-family: "Roboto", sans-serif;
+  color: #383838;
+}
+
+.offer-title {
+  width: 306px;
+  height: 47px;
+  font-size: 40px;
+  margin: 120px auto 0;
+}
+
+hr {
+  height: 4px;
+  width: 100px;
+  background-color: #f5bd41;
+  border: 1px solid #f5bd41;
+  margin-top: 20px;
+  box-sizing: border-box;
 }
 
 .all-block {
-  width: 1200px;
-  height: 184px;
-  margin: 0 104px 120px ;
-}
-
-.all-block div {
-  display: inline-block;
-  height: 184px;
-  width: 296px;
-}
-
-.all-block div img {
-  margin: 0 102px;
-}
-
-.all-block p {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 80px auto 0;
+  width: 1184px;
+  height: 176px;
   font-size: 24px;
+  gap: 60px;
+}
+
+.all-block-content {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  width: 296px;
+  height: 176px;
+}
+
+.block-icons {
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+}
+
+
+
+.container {
+  height: 625px;
+  width: 1440px;
+  background-color: #10367c;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+
+.container-footer {
+  margin: 120px 272px 0 104px;
+  display: flex;
+  justify-content: space-between;
+  font-family: system-ui;
+  width: 1064px;
+}
+
+.container-footer h2 {
+  font-weight: 500;
+}
+
+.menu-about {
+  height: 211px;
+  width: 193px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 223px;
+}
+
+.menu-property-types {
+  height: 305px;
+  width: 134px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 283px;
+}
+
+.menu-support {
+  height: 117px;
+  width: 232px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.address {
+  color: #ffffff;
+  width: 255px;
+  height: 16px;
+  font-size: 14px;
+  font-family: system-ui;
+  margin-left: 104px;
+  padding: 68px 0 0 0;
 }
