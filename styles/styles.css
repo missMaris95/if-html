@@ -2,9 +2,7 @@
 
 .container {
   height: 900px;
-  min-height: 100vh;
-  width: 100%;
-  max-width: 1440px;
+  width: 1440px;
   background-image: url("../images/fons_icon.svg");
   background-repeat: no-repeat;
   display: flex;
@@ -17,12 +15,11 @@
   color: #ffffff;
   display: flex;
 }
-.block-title {
+.block-logo {
   height: 40px;
   width: 205px;
   margin: 51px 0 0 104px;
   background-image: url("../images/sprite.png");
-  border: 1px solid white;
 }
 
 .block-stays {
@@ -54,4 +51,98 @@ hr {
   height: 40px;
   background-image: url("../images/sprite.png");
   background-position: -234px;
+}
+.block-two {
+  font-family: "Roboto", sans-serif;
+  font-size: 50px;
+  width: 542px;
+  height: 118px;
+  margin: 189px 794px 0 105px;
+}
+
+.title {
+  line-height: 55px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.content {
+  margin: 100px 672px 0 128px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  font-size: 18px;
+  height: 21px;
+  width: 640px;
+}
+
+.line-search {
+  box-sizing: border-box;
+  margin: 20px 0 0 104px;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  color: #383838;
+  background: #ffffff;
+  border-radius: 8px;
+  height: 64px;
+  width: 1230px;
+  display: flex;
+  align-items: center;
+}
+
+.nw {
+  margin-left: 27px;
+  width: 85px;
+  height: 21px;
+}
+
+.data {
+  margin-left: 358px;
+  border: 3px solid #f5bd41;
+  border-radius: 8px;
+  width: 264px;
+  height: 64px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.people {
+  margin-left: 31px;
+  width: 266px;
+  height: 21px;
+}
+
+.click-search {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  margin-left: 24px;
+  background: #3077c6;
+  border-radius: 8px;
+  width: 192px;
+  height: 64px;
+}
+
+.block-info{
+  margin: 120px 0 0 585px;
+  display: flex;
+}
+
+.google-play {
+  width: 135px;
+  height: 40px;
+  background-image: url("../images/sprite.png");
+  background-position: -275px;
+}
+
+.app-store {
+  margin-left: 17px;
+  width: 118px;
+  height: 38px;
+  background-image: url("../images/sprite.png");
+  background-position: -410px;
 }
