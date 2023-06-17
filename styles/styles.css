@@ -1,33 +1,40 @@
 @import url("./fonts.css");
 
-.container-all {
+.offer{
   max-width: 1440px;
   width: 100%;
   height: 569px;
-}
-
-.offer {
   font-family: "Roboto", sans-serif;
   color: #383838;
+  display: flex;
+  flex-direction: column;
 }
 
-.offer-title {
-  width: 306px;
-  height: 47px;
+.title {
+  /*font-family: "Roboto", sans-serif;*/
+  /*color: #383838;*/
+
+}
+
+.title__content {
+  /*width: 306px;*/
+  /*height: 47px;*/
   font-size: 40px;
-  margin: 120px auto 0;
+  /*margin: 120px auto 0;*/
+  display: flex;
+  justify-content: center;
 }
 
 hr {
-  height: 4px;
+
   width: 100px;
   background-color: #f5bd41;
-  border: 1px solid #f5bd41;
+  border: 2px solid #f5bd41;
   margin-top: 20px;
   box-sizing: border-box;
 }
 
-.all-block {
+.widget{
   display: flex;
   justify-content: center;
   margin: 80px auto 0;
@@ -37,27 +44,33 @@ hr {
   gap: 60px;
 }
 
-.all-block-content {
-  font-family: "Roboto", sans-serif;
+.widget__nav {
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
-  width: 296px;
-  height: 176px;
+  /*width: 296px;*/
+  /*height: 176px;*/
 }
 
-.block-icons {
-  margin: 0 auto;
+.nav-svg{
+  color: #3077C6;
   width: 100px;
   height: 100px;
 }
+/*.block-icons {*/
+/*  margin: 0 auto;*/
+/*  width: 100px;*/
+/*  height: 100px;*/
+/*}*/
 
 
 
 .container {
   height: 625px;
-  width: 1440px;
+  max-width: 1440px;
+  width: 100%;
   background-color: #10367c;
   margin: 0 auto;
   display: flex;
