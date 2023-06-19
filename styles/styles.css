@@ -213,23 +213,13 @@ hr {
 
 
 .offer__row{
-  /*display: flex;*/
-  /*justify-content: center;*/
-  margin: 75px auto 0;
-  /*width: 1184px;*/
-  /*!*height: 176px;*!*/
-  /*font-size: 24px;*/
-
+    margin: 75px auto 0;
 }
-
-
 
 .offer__column {
   display: flex;
   justify-content: center;
  column-gap: 16px;
-
-
 }
 
 .item-offer{
@@ -237,16 +227,14 @@ hr {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  /*align-items: center;*/
-  /*gap: 50px;*/
   width: 296px;
   height: 170px;
 }
 
 .item-offer__icon{
-
-
+  fill: #3077C6;
 }
+
 .item-offer__icon--size-support{
   height: 92px;
   width: 75px;
@@ -272,7 +260,6 @@ hr {
   color: #383838;
   font-weight: 400;
   font-size: 24px;
-  /*line-height: 35px;*/
 }
 
 
