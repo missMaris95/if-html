@@ -7,12 +7,12 @@
   display: flex;
   flex-direction: column;
 }
-.rectangle {
+.top-section {
   display: flex;
   flex-direction: column;
 }
 
-.rectangle-fons {
+.top-section-fons {
   height: 900px;
   max-width: 1440px;
   width: 100%;
@@ -20,23 +20,24 @@
   background-repeat: no-repeat;
 }
 
-.rectangle-title {
+.top-section-title {
   margin-top: 51px;
   margin-left: 104px;
   font-family: "Roboto", sans-serif;
   font-size: 24px;
   color: #ffffff;
+  width: 1232px;
   display: flex;
   justify-content: space-between;
 }
 
-.rectangle__block-logo {
+.top-section__block-logo {
   height: 40px;
   width: 206px;
-  background-image: url("../images/sprite.png");
+  fill: #3077C6;
 }
 
-.rectangle__block-aside /*блок с доп. информ*/ {
+.top-section__block-aside /*блок с доп. информ*/ {
   height: 40px;
   width: 346px;
   display: flex;
@@ -44,7 +45,7 @@
   align-items: center;
 }
 
-.rectangle__block-parameters{
+.top-section__block-parameters{
   width: 201px;
   height: 28px;
   display: flex;
@@ -52,43 +53,39 @@
   align-items: center;
 }
 
-.rectangle__block-stays {
-  height: 28px;
-  width: 59px;
+.top-section__block-stays {
   display: flex;
   flex-direction: column;
+  margin-top: auto;
 }
 
-.rectangle__block-stays hr {
+.top-section__block-stays hr {
   width: 50px;
   border: 2px solid #f5bd41;
 }
 
-.rectangle__block-attractions {
+.top-section__block-attractions {
   height: 28px;
   width: 118px;
 }
 
-.rectangle__block-social {
+.top-section__block-social {
   width: 96px;
   height: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  fill: #ffffff;
 }
 
-.rectangle__day-night {
+.top-section__day-night {
   width: 30px;
   height: 30px;
-  background-image: url("../images/sprite.png");
-  background-position: -205px;
 }
 
-.rectangle__my-profile {
-  width: 43px;
+.top-section__my-profile {
+  width: 40px;
   height: 40px;
-  background-image: url("../images/sprite.png");
-  background-position: -234px;
 }
 
 .block-discovery {
@@ -167,23 +164,11 @@
 }
 
 .block-apps {
-  margin: 120px 0 0 585px;
   display: flex;
-}
-
-.google-play {
-  width: 135px;
+  margin: 120px auto 0;
+  justify-content: space-between;
+  width: 280px;
   height: 40px;
-  background-image: url("../images/sprite.png");
-  background-position: -275px;
-}
-
-.app-store {
-  margin-left: 17px;
-  width: 118px;
-  height: 38px;
-  background-image: url("../images/sprite.png");
-  background-position: -410px;
 }
 
 /*бЛОК OFFER*/
@@ -209,7 +194,7 @@
   line-height: 47px;
 }
 
-hr {
+.offer-title hr {
   margin-top: 20px;
   width: 100px;
   border: 2px solid #f5bd41;
