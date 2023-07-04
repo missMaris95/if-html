@@ -247,7 +247,6 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  /*width: 296px;*/
   height: 170px;
 }
 
@@ -269,11 +268,6 @@
 .book-online{
   margin-top: 10px;
 }
-/*.item-offer__icon--size-online {*/
-/*  margin-top: 10px;*/
-/*  height: 67px;*/
-/*  width: 100px;*/
-/*}*/
 
 .item-offer__icon--size-reviews {
   height: 83px;
@@ -310,7 +304,7 @@
   margin-top: 120px;
   max-width: 1066px;
   width: 100%;
-  color: #ffffff;
+  color: var(--color-light);
 }
 
 .footer__about-property{
@@ -358,17 +352,19 @@
 
 .footer-address {
   margin-top: 64px;
-  color: #ffffff;
+  color: var(--color-light);
   font-size: 14px;
   line-height: 1.2;
   font-weight: 400;
 }
 
 
-@media (max-width: 360px) {
+@media (max-width: 480px) {
+
   :root{
     --col-width: calc(100% / 6)
   }
+
   .col-xs-1 {
     width: var(--col-width);
   }
@@ -470,13 +466,9 @@
   .footer-logo{
     display: flex;
     height: 19px;
-    fill: #ffffff;
+    fill: var(--color-light);
     margin-top: 40px;
     justify-content: center;
-  }
-
-  .footer__logo{
-    fill: #ffffff;
   }
 
   .footer__block-content {
