@@ -1,6 +1,6 @@
 @import url("./fonts.css");
 
-*{
+* {
   box-sizing: border-box;
 }
 
@@ -10,10 +10,10 @@
   display: none;
 }
 
-
 :root {
   --col-width: calc(100% / 12);
   --color-light: #ffffff;
+  --color-dark: #383838;
 }
 
 .col-lg-1 {
@@ -68,7 +68,6 @@
 /*  padding-right: 8px;*/
 /*}*/
 
-
 .container {
   max-width: 1264px;
   padding: 0 16px;
@@ -83,14 +82,14 @@
   background-repeat: no-repeat;
 }
 
-.top-section-title{
+.top-section-title {
   margin-top: 51px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.top-section__row{
+.top-section__row {
   font-weight: 400;
   font-size: 24px;
   display: flex;
@@ -98,34 +97,34 @@
   gap: 24px;
 }
 
-.stays{
+.stays {
   margin-top: 22px;
 }
 
-.stays hr{
-  border: 3px solid #F5BD41;
+.stays hr {
+  border: 3px solid #f5bd41;
 }
 
-.attractions{
+.attractions {
   margin-right: 24px;
 }
 
-.top-section__stay-attraction{
+.top-section__stay-attraction {
   font-family: "Roboto", sans-serif;
   color: var(--color-light);
   text-decoration: none;
 }
 
 .block-discovery {
-  width: 542px;
-  height: 118px;
-  margin-top: 202px;
+  /*width: 542px;*/
+  /*height: 118px;*/
+  margin-top: 184px;
 }
 
 .discovery-title {
   font-family: "Roboto", sans-serif;
   font-size: 50px;
-  line-height: 60px;
+  line-height: 1.2;
   font-weight: 500;
   color: var(--color-light);
 }
@@ -145,7 +144,7 @@
   margin-top: 24px;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
-  color: #383838;
+  color: var(--color-dark);
   background: #ffffff;
   border-radius: 8px;
   display: flex;
@@ -161,7 +160,8 @@
   align-items: center;
 }
 
-.discovery-search__nw {}
+.discovery-search__nw {
+}
 
 .discovery-search__data {
   position: absolute;
@@ -187,6 +187,10 @@
   border: #3077c6;
   width: 192px;
   height: 64px;
+}
+
+.discovery-content_media {
+  display: none;
 }
 
 .block-apps {
@@ -252,7 +256,6 @@
 
 .item-offer__icon {
   fill: #3077c6;
-
 }
 
 .item-offer__icon--size-support {
@@ -265,7 +268,7 @@
   width: 82px;
 }
 
-.book-online{
+.book-online {
   margin-top: 10px;
 }
 
@@ -275,7 +278,7 @@
 }
 
 .item-offer__title {
-  color: #383838;
+  color: var(--color-dark);
   font-weight: 400;
   font-size: 24px;
 }
@@ -294,7 +297,7 @@
   justify-content: space-between;
 }
 
-.footer-logo{
+.footer-logo {
   display: none;
 }
 
@@ -307,7 +310,7 @@
   color: var(--color-light);
 }
 
-.footer__about-property{
+.footer__about-property {
   display: flex;
   justify-content: space-between;
   max-width: 549px;
@@ -327,7 +330,7 @@
   font-weight: 500;
 }
 
-.footer-text{
+.footer-text {
   font-weight: 400;
 }
 
@@ -358,11 +361,9 @@
   font-weight: 400;
 }
 
-
 @media (max-width: 480px) {
-
-  :root{
-    --col-width: calc(100% / 6)
+  :root {
+    --col-width: calc(100% / 6);
   }
 
   .col-xs-1 {
@@ -387,6 +388,154 @@
 
   .col-xs-6 {
     width: 50%;
+  }
+
+  .top-section {
+    height: 533px;
+  }
+
+  .top-section-title{
+    margin-top: 12px;
+  }
+
+  .logo {
+    width: 122px;
+  }
+
+  .stays,
+  .attractions {
+    display: none;
+  }
+
+  .top-section__row {
+    gap: 16px;
+  }
+
+  .night {
+    width: 16px;
+  }
+
+  .myprofile {
+    width: 24px;
+  }
+
+  .block-discovery {
+    margin-top: 0;
+  }
+
+  .discovery-title {
+    font-size: 30px;
+    margin-top: 50px;
+  }
+
+  .discovery-content,
+  .discovery-search {
+    display: none;
+  }
+
+  .discovery-container_media{
+    margin: 29px auto;
+    max-width: 328px;
+    width: 100%;
+    height: 232px;
+    background-color:#f5bd41;
+  }
+
+  .discovery-content_media {
+    display: grid;
+    grid-template-columns: 312px ;
+    grid-template-rows: repeat(4, 48px);
+    row-gap: 8px;
+    margin: 8px;
+    color: var(--color-dark);
+    font-family: "Roboto", sans-serif;
+  }
+
+  .hotel-name {
+    grid-column: 1;
+    display: flex;
+    align-items: center;
+    border: 1px solid #000000;
+  }
+
+  .fon{
+    margin: 0 auto;
+    max-width: 312px;
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  .hotel-name img{
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+  }
+
+  .text-date{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.2;
+    margin-left: 8px;
+    align-items: end;
+  }
+
+  .text {
+    font-size: 12px;
+    line-height: 1.5;
+    margin-left: 8px;
+    align-items: end;
+  }
+
+  .checks{
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 152px 152px;
+    grid-template-rows: 48px;
+    column-gap: 8px;
+  }
+
+  .department {
+    grid-column: 1;
+    display: grid;
+  }
+  .arrival {
+    grid-column: 2;
+    display: grid;
+  }
+
+  .options {
+    grid-row: 3;
+    display: grid;
+    align-items: center;
+  }
+
+  .adults{
+    grid-column: 1;
+    border-right: 1px solid #bfbfbf ;
+  }
+  .children{
+    grid-column: 2;
+    border-right: 1px solid #bfbfbf ;
+  }
+  .rooms {
+    grid-column: 3;
+  }
+
+  .discovery__click-search {
+    grid-row: 4;
+    margin: 0 auto;
+    font-size: 19px;
+    border-radius: 4px;
+    max-width: 312px;
+    width:100%;
+    height: 48px;
+  }
+
+  .block-apps {
+    margin-top: 0;
   }
 
 
@@ -418,13 +567,12 @@
     margin-left: 0;
   }
 
-  .col-xs-4:last-child .offer__column{
+  .col-xs-4:last-child .offer__column {
     margin-bottom: 40px;
   }
 
   .item-offer {
     height: 104px;
-
   }
 
   .item-offer__icon--size-support {
@@ -437,7 +585,7 @@
     width: 70px;
   }
 
-  .book-online{
+  .book-online {
     margin-top: 0;
     height: 70px;
     width: 70px;
@@ -448,11 +596,10 @@
     width: 70px;
   }
 
-  .item-offer__title{
+  .item-offer__title {
     margin-top: 16px;
     font-size: 15px;
   }
-
 
   /*FOOTER*/
   .footer-block {
@@ -462,8 +609,8 @@
   .footer {
     height: 203px;
   }
- /* почему не работает fill?*/
-  .footer-logo{
+  /* почему не работает fill?*/
+  .footer-logo {
     display: flex;
     height: 19px;
     fill: var(--color-light);
@@ -489,14 +636,13 @@
     font-size: 20px;
   }
 
-  .footer-title{
+  .footer-title {
     font-size: 15px;
     text-decoration: underline;
-
   }
 
-  .footer-text{
-   display: none;
+  .footer-text {
+    display: none;
   }
 
   .footer-address {
@@ -505,5 +651,4 @@
     justify-content: center;
     margin-top: 32px;
   }
-
 }
