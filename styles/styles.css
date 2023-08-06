@@ -98,11 +98,12 @@
 }
 
 .stays {
-  margin-top: 22px;
+  margin-top: 28px;
 }
 
 .stays hr {
-  border: 3px solid #f5bd41;
+  border: 2px solid #f5bd41;
+  width: 50px;
 }
 
 .attractions {
@@ -116,8 +117,6 @@
 }
 
 .block-discovery {
-  /*width: 542px;*/
-  /*height: 118px;*/
   margin-top: 184px;
 }
 
@@ -140,44 +139,37 @@
   width: 640px;
 }
 
-.discovery-search {
+.discovery-search{
   margin-top: 24px;
-  font-family: "Roboto", sans-serif;
-  font-size: 18px;
-  color: var(--color-dark);
-  background: #ffffff;
-  border-radius: 8px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.discovery-search__choice {
-  display: flex;
-  justify-content: space-between;
-  max-width: 985px;
-  width: 100%;
-  margin: 0 auto;
-  align-items: center;
+  display: grid;
+  grid-template-rows: 64px;
+  grid-template-columns: minmax(120px,465px) 259px 314px minmax(100px,192px);
 }
 
 .discovery-search__nw {
+  grid-column: 1;
+  justify-items: end;
+  margin-left: 28px;
+  align-items: center;
+  display: flex;
 }
 
-.discovery-search__data {
-  position: absolute;
-  left: 527px;
-  box-sizing: border-box;
+.discovery-search__data{
+  grid-column: 2;
+  display: grid;
+  place-items: center;
   border: 3px solid #f5bd41;
   border-radius: 8px;
-  width: 260px;
-  height: 64px;
-  display: flex;
-  margin: 0 auto;
-  align-items: center;
-  justify-content: center;
 }
 
-.discovery__click-search {
+.discovery-search__people{
+  grid-column: 3;
+  display: grid;
+  place-items: center;
+}
+
+.discovery__bottom{
+  grid-column: 4;
   color: var(--color-light);
   font-family: "Roboto", sans-serif;
   font-size: 24px;
@@ -185,9 +177,23 @@
   background: #3077c6;
   border-radius: 8px;
   border: #3077c6;
-  width: 192px;
-  height: 64px;
+  max-width: 192px;
+  width: 100%;
 }
+
+.fon{
+  max-width: 1223px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.text {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
+ }
 
 .discovery-content_media {
   display: none;
@@ -524,7 +530,7 @@
     grid-column: 3;
   }
 
-  .discovery__click-search {
+  .discovery__bottom-media {
     grid-row: 4;
     margin: 0 auto;
     font-size: 19px;
@@ -532,13 +538,16 @@
     max-width: 312px;
     width:100%;
     height: 48px;
+    color: var(--color-light);
+    background: #3077c6;
+    border: #3077c6;
   }
 
   .block-apps {
     margin-top: 0;
   }
 
-
+/*Block OFFER*/
 
   .offer {
     height: 641px;
@@ -609,7 +618,7 @@
   .footer {
     height: 203px;
   }
-  /* почему не работает fill?*/
+  
   .footer-logo {
     display: flex;
     height: 19px;
