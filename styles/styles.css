@@ -13,6 +13,9 @@
 :root {
   --color-light: #ffffff;
   --color-dark: #383838;
+  --bg-color: #eaf0f9;
+  --secondary-text: #bfbfbf
+
 }
 
 .container {
@@ -42,7 +45,6 @@
   display: flex;
   align-items: center;
   gap: 24px;
-
 }
 
 .stays{
@@ -187,24 +189,27 @@
 .offer__header {
   display: flex;
   flex-direction: column;
-  margin-top: 120px;
+}
+
+.title{
+  font-size: 40px;
+  margin: 120px auto 0;
+  line-height: 1.2;
+  font-weight: 500;
+  color: var(--color-dark);
 }
 
 .offer-title {
-  font-size: 40px;
-  margin: 0 auto;
-  line-height: 1.2;
   position: relative;
-
 }
 
-
-.offer-title-line {
-  border-bottom: 4px solid #f5bd41;
+.offer-title:hover:after{
+  content: '';
+  border: 4px solid #f5bd41;
   width: 100px;
   position: absolute;
-  left: 50%;
-  transform: translate(-50%,70px);
+  right: 50%;
+  transform: translate(50%, 70px);
 }
 
 .offer__row {
@@ -233,6 +238,79 @@
 
 .item-offer__title {
   font-size: 24px;
+}
+
+/*block homes*/
+.homes{
+  height: 828px;
+  background-color: var(--bg-color);
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.homes__header{
+  margin: 0 auto;
+}
+.homes-title{}
+
+.homes__row {
+  max-width: 1232px;
+  width: 100%;
+  margin: 105px auto;
+  display: grid;
+  grid-template-columns: minmax(156px,296px) minmax(156px,296px) minmax(156px,296px) minmax(156px,296px);
+  column-gap: 8px;
+  position: relative;
+}
+
+.item-homes{
+  display: grid;
+  grid-template-rows: 296px auto 1fr;
+  row-gap: 24px;
+}
+
+.item-homes__icon img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.item-homes__name{
+  font-size: 24px;
+  line-height: 1.2;
+  color: #3077C6;
+
+}
+.item-homes__country{
+  font-size: 24px;
+  line-height: 1.2;
+  color: var(--secondary-text) ;
+}
+
+.arrow-homes {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: #f3f3f3;
+  box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.2);
+  border: 1px solid #000;
+  position: absolute;
+  top: 35%;
+  right: 0;
+  transform: translate(0, -50%);
+}
+
+.arrow-homes__icon {
+  position: absolute;
+  right: 50%;
+  bottom: 50%;
+  transform: translate(50%, 50%);
+}
+
+.arrow-homes__icon-arrow{
+  width: 9px;
+  height: 21px;
 }
 
 /*block footer*/
@@ -334,10 +412,7 @@
     font-size: 15px;
     display: grid;
     grid-template-rows: 64px;
-    grid-template-columns: minmax(105px, 465px) minmax(189px, 259px) 258px minmax(
-        100px,
-        192px
-      );
+    grid-template-columns: minmax(105px, 465px) minmax(189px, 259px) 258px minmax(100px, 192px);
   }
 
   .text {
@@ -354,17 +429,14 @@
     height: 400px;
   }
 
-  .offer__header {
-    margin-top: 65px;
-  }
-
-  .offer-title {
+  .title {
     font-size: 36px;
+    margin: 65px auto 0;
   }
 
   .offer__row {
     column-gap: 8px;
-    margin: 50px auto 0;
+    margin: 80px auto 0;
   }
 
   .item-offer {
@@ -379,6 +451,22 @@
 
   .item-offer__title {
     font-size: 18px;
+  }
+
+  /*homes*/
+  .homes{
+    height: 700px;
+  }
+
+  .homes__row {
+    max-width: 1024px;
+    width: 100%;
+    margin: 80px auto;
+
+  }
+  .item-homes__icon {
+  }
+  .item-homes {
   }
 
   /*footer*/
@@ -547,11 +635,34 @@
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     max-width: 540px;
     row-gap: 35px;
-    margin: 35px auto 0;
+    margin: 55px auto 0;
   }
 
-  .item-offer__title {
-    font-size: 16px;
+  .title{
+    font-size: 32px;
+    margin: 60px auto 0;
+  }
+
+  /*homes*/
+  .homes{
+    height: 530px;
+  }
+
+  .homes__row {
+    margin: 70px auto;
+  }
+
+  .item-homes {
+    grid-template-rows: 200px auto 1fr;
+    row-gap: 16px;
+  }
+
+  .item-homes__name{
+    font-size: 18px ;
+  }
+
+  .item-homes__country{
+    font-size: 18px;
   }
 
   /*footer*/
@@ -601,16 +712,9 @@
     height: 641px;
   }
 
-  .offer__header {
-    margin-top: 24px;
-  }
-
-  .offer__header hr {
-    display: none;
-  }
-
-  .offer-title {
+  .title {
     font-size: 28px;
+    margin: 25px auto 0;
   }
 
   .offer__row {
@@ -629,6 +733,37 @@
 
   .item-offer__title {
     font-size: 15px;
+  }
+
+  /*homes*/
+  .homes {
+    height: 354px;
+  }
+
+  .homes__row {
+    column-gap: 16px;
+    margin: 30px auto;
+  }
+
+  .item-homes {
+    grid-template-rows: 156px auto 1fr;
+    row-gap: 8px;
+  }
+
+  .item-homes__name {
+    font-size: 12px;
+  }
+
+  .item-homes__country {
+    font-size: 12px;
+    margin-top: -5px;
+  }
+
+  .arrow-homes {
+    width: 28px;
+    height: 28px;
+    border: none;
+    top: 40%;
   }
 
   /*FOOTER*/
