@@ -260,21 +260,22 @@
 .homes-title {}
 
 .homes__row {
-  max-width: 1232px;
-  width: 100%;
   margin: 105px auto;
   display: grid;
-  grid-template-columns:
-    minmax(156px, 296px) minmax(156px, 296px) minmax(156px, 296px)
-    minmax(156px, 296px);
+  grid-template-columns: repeat(4, minmax(156px, 296px));
   column-gap: 8px;
   position: relative;
 }
 
 .item-homes {
   display: grid;
-  grid-template-rows: 296px auto 1fr;
+  grid-auto-flow: row;
+  grid-template: auto 1fr minmax(40px,auto)/1fr ;
   row-gap: 24px;
+}
+
+.item-homes__icon{
+  position: relative;
 }
 
 .item-homes__icon img {
@@ -288,6 +289,7 @@
   line-height: 1.2;
   color: var(--accent-blue);
 }
+
 .item-homes__country {
   font-size: 24px;
   line-height: 1.2;
@@ -295,9 +297,10 @@
 }
 
 .arrow-homes {
+  position: absolute;
   top: 35%;
   right: 0;
-  transform: translate(0, -50%);
+  transform: translate(50%, -50%);
 }
 
 .arrow-design {
@@ -306,7 +309,7 @@
   border-radius: 50px;
   background-color: #f3f3f3;
   box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.2);
-  position: absolute;
+
 }
 
 .arrow-homes__icon {
@@ -417,6 +420,7 @@
 }
 
 .arrow-destinations {
+  position: absolute;
   bottom: 0;
   left: 50%;
   transform: translate(-50%, 90px);
@@ -664,9 +668,9 @@
     width: 100%;
     margin: 80px auto;
   }
-  .item-homes__icon {
-  }
-  .item-homes {
+
+  .arrow-homes {
+    top: 27%;
   }
 
   /*destinations*/
@@ -885,7 +889,7 @@
 
   .offer__row {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(221px, 1fr));
     max-width: 540px;
     row-gap: 35px;
     margin: 55px auto 0;
@@ -906,7 +910,6 @@
   }
 
   .item-homes {
-    grid-template-rows: 200px auto 1fr;
     row-gap: 16px;
   }
 
@@ -1047,13 +1050,21 @@
   }
 
   .homes__row {
-    column-gap: 16px;
     margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 156px );
+    column-gap: 16px;
+    justify-content: center;
   }
 
   .item-homes {
-    grid-template-rows: 156px auto 1fr;
+    grid-template-rows: 155px auto 1fr;
     row-gap: 8px;
+  }
+
+
+  .item-property{
+    display: none;
   }
 
   .item-name {
@@ -1063,13 +1074,12 @@
   .item-homes__country {
     font-size: 12px;
     margin-top: -5px;
+    max-width: 140px;
   }
 
   .arrow-homes {
-    width: 28px;
-    height: 28px;
-    border: none;
-    top: 40%;
+    top: 36%;
+    left: 80%;
   }
 
   /*destinations*/
@@ -1084,11 +1094,11 @@
 
   .destinations__tabs-media {
     display: grid;
-    margin-top: 30px;
+    place-items: center;
     grid-template-columns: repeat(3, 98px);
     grid-template-rows: 32px;
-    column-gap: 8px;
-    place-items: center;
+    column-gap: 16px;
+    margin: 30px auto 0;
   }
 
   .destinations__tab {
@@ -1102,25 +1112,24 @@
 
   .destinations__row {
     margin-top: 24px;
-    display: flex;
-    justify-content: space-between;
-    gap: 8px;
+    justify-content: center;
+    gap: 16px;
     position: relative;
   }
 
   .item-destinations {
-    gap: 0px;
+    gap: 8px;
   }
 
   .icon-size {
-    width: 156px;
-    height: 156px;
+    width: 155px;
+    height: 155px;
   }
 
   .arrow-destinations {
     top: 50%;
-    left: 100%;
-    transform: translate(-50%, -50%);
+    left: 87%;
+    transform: translate(-50%, -100%);
   }
 
   .arrow-design {
@@ -1132,6 +1141,11 @@
     top: 50%;
     left: 50%;
     transform: rotate(0deg) translate(-50%, -50%);
+  }
+
+  .arrow__icon-arrow {
+    width: 7px;
+    height: 13px;
   }
 
   /*sign-up*/
@@ -1148,6 +1162,7 @@
     display: flex;
     column-gap: 16px;
     align-items: center;
+    justify-content: center;
     padding: 24px 16px;
   }
 
