@@ -442,20 +442,22 @@
 
 /*block sign-up*/
 .sign-up {
-  font-family: "Roboto", sans-serif;
-  background-color: var(--bg-color);
-  max-width: 1232px;
-  width: 100%;
-  margin: 0 auto;
-  height: 200px;
+  /*font-family: "Roboto", sans-serif;*/
+  /*background-color: var(--bg-color);*/
+  /*max-width: 1232px;*/
+  /*min-width: 1232px;*/
+  /*width: 100%;*/
+  /*margin: 0 auto;*/
+  /*height: 200px;*/
 }
 
 .sign-up__wrapper {
   display: grid;
   grid-template-columns: 86px 1fr 26px;
   grid-template-rows: 152px;
-  column-gap: 16px;
+  column-gap: 24px;
   padding: 24px;
+  background-color: var(--bg-color);
 }
 
 .sign-up__wrapper-media {
@@ -668,8 +670,6 @@
 .footer {
   height: 625px;
   background-color: #10367c;
-  margin: 0 auto;
-  width: 100%;
 }
 
 .footer-block {
@@ -851,8 +851,6 @@
   .guests-wrapper-media{
     display: none;
   }
-
-
 
   /*footer*/
   .footer__block-content__column {
@@ -1126,9 +1124,10 @@
   .guests__row {
     margin: 60px auto;
     display: grid;
-    grid-template-columns: repeat( auto-fill, minmax(270px, 1fr));
-     row-gap: 16px;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 16px;
   }
+
   /*footer*/
   .footer {
     height: 385px;
