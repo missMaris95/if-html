@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Title</title>
+    <title>Trip House</title>
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="stylesheet" href="reset.css" />
   </head>
@@ -17,16 +18,10 @@
           />
         </symbol>
         <symbol id="night" viewBox="0 0 30 30">
-          <path
-            d="M25.61 10.61V4.39h-6.22L15 0l-4.39 4.39H4.39v6.22L0 15l4.39 4.39v6.22h6.22L15 30l4.39-4.39h6.22v-6.22L30 15l-4.39-4.39ZM15 22.958a7.924 7.924 0 0 1-3.316-.73c2.732-1.26 4.642-4.018 4.642-7.228s-1.91-5.968-4.642-7.228A7.924 7.924 0 0 1 15 7.042c4.39 0 7.958 3.568 7.958 7.958 0 4.39-3.568 7.958-7.958 7.958Z"
-            fill="currentColor"
-          />
+          <path d="M25.61 10.61V4.39h-6.22L15 0l-4.39 4.39H4.39v6.22L0 15l4.39 4.39v6.22h6.22L15 30l4.39-4.39h6.22v-6.22L30 15l-4.39-4.39ZM15 22.958a7.924 7.924 0 0 1-3.316-.73c2.732-1.26 4.642-4.018 4.642-7.228s-1.91-5.968-4.642-7.228A7.924 7.924 0 0 1 15 7.042c4.39 0 7.958 3.568 7.958 7.958 0 4.39-3.568 7.958-7.958 7.958Z"/>          />
         </symbol>
         <symbol id="my-profile" viewBox="0 0 40 40">
-          <path
-            fill="#ffffff"
-            d="M20 0C8.96 0 0 8.96 0 20s8.96 20 20 20 20-8.96 20-20S31.04 0 20 0Zm0 6c3.32 0 6 2.68 6 6s-2.68 6-6 6-6-2.68-6-6 2.68-6 6-6Zm0 28.4c-5 0-9.42-2.56-12-6.44.06-3.98 8-6.16 12-6.16 3.98 0 11.94 2.18 12 6.16-2.58 3.88-7 6.44-12 6.44Z"
-          />
+          <path d="M20 0C8.96 0 0 8.96 0 20s8.96 20 20 20 20-8.96 20-20S31.04 0 20 0Zm0 6c3.32 0 6 2.68 6 6s-2.68 6-6 6-6-2.68-6-6 2.68-6 6-6Zm0 28.4c-5 0-9.42-2.56-12-6.44.06-3.98 8-6.16 12-6.16 3.98 0 11.94 2.18 12 6.16-2.58 3.88-7 6.44-12 6.44Z"/>
         </symbol>
         <symbol id="google-play" viewBox="0 0 135 40">
           <path
@@ -135,7 +130,6 @@
             </linearGradient>
           </defs>
         </symbol>
-
         <symbol id="app-store" viewBox="0 0 120 40">
           <path
             fill="#A6A6A6"
@@ -233,31 +227,33 @@
 
       </svg>
     </div>
-<div class="trip-house">
   <header class="container top-section">
     <div class="top-section-title">
-      <img class="top-section__logo" src="./images/logo.svg" alt="logo" />
+      <h1 class="top-section-basic-title" aria-hidden="true">Trip House</h1>
+      <a href="#" >
+        <img class="top-section__logo" src="./images/logo.svg" alt="logo" />
+      </a>
       <nav class="top-section__menu">
         <ul class="top-section__row">
           <li class="stays">
-            <a class="top-section__stay-attraction" target="_blank" href="#"
-            >Stays</a
-            >
+            <a class="top-section__stay-attraction" href="#">Stays</a>
           </li>
           <li class="attractions">
-            <a class="top-section__stay-attraction" target="_blank" href="#"
-            >Attractions</a
-            >
+            <a class="top-section__stay-attraction" href="#">Attractions</a>
           </li>
           <li class="night-icon">
-            <img class="night" src="./images/Night.svg" alt="night" />
+            <button class="button-night" aria-label="dark/light">
+              <svg class="night" >
+                <use href="#night"/>
+              </svg>
+            </button>
           </li>
           <li class="myprofile-icon">
-            <img
-                    class="myprofile"
-                    src="./images/myprofile.svg"
-                    alt="my-profile"
-            />
+            <button class="button-myprofile" aria-label="my profile">
+              <svg class="my-profile" >
+                <use href="#my-profile"/>
+              </svg>
+            </button>
           </li>
           <li class="top-section__burger">
             <span></span>
@@ -265,11 +261,9 @@
         </ul>
       </nav>
     </div>
-    <div class="block-discovery">
-      <h1 class="discovery-title">
+      <h2 class="discovery-title">
         Discover stays<br />to live, work or just relax
-      </h1>
-    </div>
+      </h2>
     <div class="discovery-content">
       <p class="title-name">Your destination or hotel name</p>
       <p class="title-check">Check-in — Check-out</p>
@@ -278,7 +272,7 @@
       <p class="title-name">Hotel name</p>
       <p class="title-check">Check-in — Check-out</p>
     </div>
-    <div class="discovery-search fon">
+    <div class="discovery-search">
       <div class="discovery-search__nw">
         <p class="text">New York</p>
       </div>
@@ -324,280 +318,277 @@
       </div>
     </div>
     <div class="block-apps">
-      <svg class="google-play">
-        <use href="#google-play" />
-      </svg>
-      <svg class="app-store">
-        <use href="#app-store" />
-      </svg>
+      <a class="block-google-play" href="#">
+        <svg class="google-play">
+          <use href="#google-play" />
+        </svg>
+      </a>
+      <a class="block-app-store" href="#">
+        <svg class="app-store">
+          <use href="#app-store" />
+        </svg>
+      </a>
     </div>
   </header>
-  <section class="container offer">
-    <div class="offer__header">
-      <h2 class="offer-title title">What do we offer</h2>
-    </div>
-    <div class="offer__row">
-      <div class="item-offer">
-        <div class="item-offer__icon">
-          <svg class="item-offer__icon--size-support">
-            <use href="#support" />
-          </svg>
-        </div>
-        <div class="item-offer__title">Support 24/7</div>
-      </div>
-      <div class="item-offer">
-        <div class="item-offer__icon">
-          <svg class="item-offer__icon--size-communicate">
-            <use href="#communicate" />
-          </svg>
-        </div>
-        <div class="item-offer__title">Communicate directly</div>
-      </div>
-      <div class="item-offer">
-        <div class="item-offer__icon">
-          <svg class="item-offer__icon--size-online">
-            <use href="#online" />
-          </svg>
-        </div>
-        <div class="item-offer__title">Book online</div>
-      </div>
-      <div class="item-offer">
-        <div class="item-offer__icon">
-          <svg class="item-offer__icon--size-reviews">
-            <use href="#reviews" />
-          </svg>
-        </div>
-        <div class="item-offer__title">Real guest reviews</div>
-      </div>
-    </div>
-  </section>
-  <section class="container homes">
-    <div class="homes__header">
-      <h2 class="homes-title title">Homes guests loves</h2>
-    </div>
-    <div class="homes__row">
-      <div class="item-homes">
-        <div class="item-homes__icon">
-          <img src="./images/hotel.jpg" alt="hotel" />
-        </div>
-        <div class="item-name">Hotel Leopold</div>
-        <div class="item-homes__country">Saint Petersburg, Russia</div>
-      </div>
-      <div class="item-homes">
-        <div class="item-homes__icon">
-          <img src="./images/apartments.jpg" alt="apartments" />
-        </div>
-        <div class="item-name">Apartment Sunshine</div>
-        <div class="item-homes__country">Santa Cruz de Tenerife, Spain</div>
-      </div>
-      <div class="item-homes item-property">
-        <div class="item-homes__icon">
-          <img src="./images/villa.jpg" alt="villa" />
-        </div>
-        <div class="item-name">Villa Kunerad</div>
-        <div class="item-homes__country">Vysokie Tatry, Slowakia</div>
-      </div>
-      <div class="item-homes item-property">
-        <div class="item-homes__icon">
-          <img src="./images/hostel.jpg" alt="hostel" />
-        </div>
-        <div class="item-name">Hostel Friendship</div>
-        <div class="item-homes__country">Berlin, Germany</div>
-      </div>
-      <div class="arrow-homes arrow-design">
-        <div class="arrow-homes__icon">
-          <svg class="arrow__icon-arrow">
-            <use href="#arrow" />
-          </svg>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="container destinations">
-    <div class="destinations__header">
-      <h2 class="destinations__title title">The best destinations</h2>
-    </div>
-    <div class="destinations__tabs">
-      <div class="destinations__tab">Regions</div>
-      <div class="destinations__tab">Cities</div>
-      <div class="destinations__tab">Places of interest</div>
-    </div>
-    <div class="destinations__tabs-media">
-      <div class="destinations__tab">Regions</div>
-      <div class="destinations__tab">Cities</div>
-      <div class="destinations__tab">Places</div>
-    </div>
-    <div class="destinations__row">
-      <div class="item-destinations">
-        <div class="item-destinations__icon icon-primary">
-          <img class="icon-size" src="./images/maldives.jpg" alt="maldives" />
-        </div>
-        <div class="item-name">Maldives</div>
-      </div>
-      <div class="item-destinations">
-        <div class="item-destinations__icon">
-          <img class="icon-size" src="./images/spain.jpg" alt="spain" />
-        </div>
-        <div class="item-name">Spain</div>
-      </div>
-      <div class="item-destinations item-property">
-        <div class="item-destinations__icon">
-          <img class="icon-size" src="./images/norway.jpg" alt="norway" />
-        </div>
-        <div class="item-name">Norway</div>
-      </div>
-      <div class="item-destinations item-property">
-        <div class="item-destinations__icon">
-          <img class="icon-size" src="./images/island.jpg" alt="island" />
-        </div>
-        <div class="item-name">Island</div>
-      </div>
-      <div class="arrow-destinations arrow-design">
-        <div class="arrow-destinations__icon">
-          <svg class="arrow__icon-arrow">
-            <use href="#arrow" />
-          </svg>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="container sign-up">
-    <div class="sign-up__wrapper">
-      <div class="sign-up-icon">
-        <svg>
-          <use href="#sign-up-icon" />
-        </svg>
-      </div>
-      <div class="sign-up__row">
-        <div class="sign-up__content">
-          Sign up and get 20% off your first booking
-        </div>
-        <button class="sign-up__button">Sign up</button>
-      </div>
-      <div class="sign-up__button-close">
-        <svg class="sign-up-close">
-          <use href="#sign-up-close" />
-        </svg>
-      </div>
-    </div>
-    <div class="sign-up__wrapper-media">
-      <div class="sign-up__button-close">
-        <svg class="sign-up-close">
-          <use href="#sign-up-close" />
-        </svg>
-      </div>
-      <div class="sign-up-icon-media">
-        <svg class="sign-up-logo">
-          <use href="#sign-up-logo" />
-        </svg>
-      </div>
-      <div class="sign-up__content">
-        Sign up in the app and get 20% <br>off your first booking
-      </div>
-      <div class="sign-up__install">Install </div>
-    </div>
-  </section>
-
-  <section class="container guests">
-    <div class="guests__header">
-      <h2 class="guests-title title">Guests reviews</h2>
-    </div>
-    <div class="guests__row">
-      <div class="guests-wrapper guests-wrapper-media">
-        <div class="guests-icon">
-          <img src="./images/bali.jpg" alt="bali" />
-          <div class="guests-wrapper__price">
-            <div class="guests-wrapper__price-text">From 250 USD</div>
+    <main class="main">
+      <section class="container offer">
+          <div class="offer__header">
+            <h2 class="offer-title title">What do we offer</h2>
           </div>
-        </div>
-        <div class="guests-wrapper__name-score">
-          <div class="guests-name ">Ubud Bali Resort&SPA</div>
-          <div class="guests-score">9,4</div>
-        </div>
-        <div class="guests-wrapper__country-reviews">
-          <div class="guests-country">Bali, Indonesia</div>
-          <div class="guests-reviews">1324 reviews</div>
-        </div>
-        <div class="guests-wrapper__person">
-          <div class="person-account">
-            <svg class="account">
-              <use href="#account"/>
-            </svg>
-          </div>
-          <div class="person-name">Hanna Ivanova</div>
-          <div class="person-country">&#127482;&#127462; Ukraine</div>
-        </div>
-        <div class="guests-content">Great location, really pleasant and clean rooms, but the thing that makes this such a good place to stay are the staff. All of the people are incredibly helpful and generous with their time and advice.</div>
-      </div>
-      <div class="guests-wrapper guests-wrapper-rotterdam">
-        <div class="guests-icon">
-          <img src="./images/rotterdam.jpg" alt="rotterdam" />
-          <div class="guests-wrapper__price">
-            <div class="guests-wrapper__price-text">From 40 USD</div>
-          </div>
-        </div>
-        <div class="guests-wrapper__name-score">
-          <div class="guests-name ">King Kong Hostel</div>
-          <div class="guests-score">8,9</div>
-        </div>
-        <div class="guests-wrapper__country-reviews">
-          <div class="guests-country">Rotterdam, Netherlands</div>
-          <div class="guests-reviews">2016 reviews</div>
-        </div>
-        <div class="guests-wrapper__person">
-          <div class="person-account">
-            <svg class="account">
-              <use href="#account"/>
-            </svg>
-          </div>
-          <div class="person-name">Adam Smith</div>
-          <div class="person-country"> &#x1f1fa;&#x1f1f8; USA</div>
-        </div>
-        <div class="guests-content">I've been in this hostel for a month and here is the best hostel of all</br>
-          Excellent management of excellent and ethical staff and bedrooms Bathrooms are always clean and excellent
-          <br>Most importantly, those who work here are kind and good-natured.</div>
-      </div>
-      <div class="guests-wrapper guests-wrapper-rokoko">
-        <div class="guests-icon">
-          <img src="./images/ourika.jpg" alt="ourika" />
-          <div class="guests-wrapper__price">
-            <div class="guests-wrapper__price-text">From 100 USD</div>
-          </div>
-          <div class="arrow-guests arrow-design">
-            <div class="arrow-guests__icon">
-              <svg class="arrow__icon-arrow">
-                <use href="#arrow" />
-              </svg>
+          <div class="offer__row">
+            <div class="item-offer">
+              <div class="item-offer__icon">
+                <svg class="item-offer__icon--size-support">
+                  <use href="#support" />
+                </svg>
+              </div>
+              <div class="item-offer__title">Support 24/7</div>
+            </div>
+            <div class="item-offer">
+              <div class="item-offer__icon">
+                <svg class="item-offer__icon--size-communicate">
+                  <use href="#communicate" />
+                </svg>
+              </div>
+              <div class="item-offer__title">Communicate directly</div>
+            </div>
+            <div class="item-offer">
+              <div class="item-offer__icon">
+                <svg class="item-offer__icon--size-online">
+                  <use href="#online" />
+                </svg>
+              </div>
+              <div class="item-offer__title">Book online</div>
+            </div>
+            <div class="item-offer">
+              <div class="item-offer__icon">
+                <svg class="item-offer__icon--size-reviews">
+                  <use href="#reviews" />
+                </svg>
+              </div>
+              <div class="item-offer__title">Real guest reviews</div>
             </div>
           </div>
-        </div>
-        <div class="guests-wrapper__name-score">
-          <div class="guests-name ">Rokoko Hotel</div>
-          <div class="guests-score">9.1</div>
-        </div>
-        <div class="guests-wrapper__country-reviews">
-          <div class="guests-country">Ourika, Marocco</div>
-          <div class="guests-reviews">815 reviews</div>
-        </div>
-        <div class="guests-wrapper__person">
-          <div class="person-account">
-            <svg class="account">
-              <use href="#account"/>
-            </svg>
+        </section>
+      <section class="container homes">
+          <div class="homes__header">
+            <h2 class="homes-title title">Homes guests loves</h2>
           </div>
-          <div class="person-name">Anika Messer</div>
-          <div class="person-country">Germany</div>
-        </div>
-        <div class="guests-content">Efficient, friendly, professional, and appropriately attentive. Great hotel in a great location. Easy access to all the surrounding historical sites. Staff is fantastic. Will definitely stay at this location during my next stay in Marocco.</div>
-      </div>
-      <div class="circles-media">
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-      </div>
-    </div>
-  </section>
+          <div class="homes__row">
+            <div class="item-homes">
+              <div class="item-homes__icon">
+                <img src="./images/hotel.jpg" alt="hotel" />
+              </div>
+              <div class="item-name">Hotel Leopold</div>
+              <div class="item-homes__country">Saint Petersburg, Russia</div>
+            </div>
+            <div class="item-homes">
+              <div class="item-homes__icon">
+                <img src="./images/apartments.jpg" alt="apartments" />
+              </div>
+              <div class="item-name">Apartment Sunshine</div>
+              <div class="item-homes__country">Santa Cruz de Tenerife, Spain</div>
+            </div>
+            <div class="item-homes item-property">
+              <div class="item-homes__icon">
+                <img src="./images/villa.jpg" alt="villa" />
+              </div>
+              <div class="item-name">Villa Kunerad</div>
+              <div class="item-homes__country">Vysokie Tatry, Slowakia</div>
+            </div>
+            <div class="item-homes item-property">
+              <div class="item-homes__icon">
+                <img src="./images/hostel.jpg" alt="hostel" />
+              </div>
+              <div class="item-name">Hostel Friendship</div>
+              <div class="item-homes__country">Berlin, Germany</div>
+            </div>
+            <div class="arrow-homes arrow-design">
+              <div class="arrow-homes__icon">
+                <svg class="arrow__icon-arrow">
+                  <use href="#arrow" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </section>
+      <section class="container destinations">
+          <div class="destinations__header">
+            <h2 class="destinations__title title">The best destinations</h2>
+          </div>
+          <div class="destinations__tabs">
+            <div class="destinations__tab">Regions</div>
+            <div class="destinations__tab">Cities</div>
+            <div class="destinations__tab">Places of interest</div>
+          </div>
+          <div class="destinations__tabs-media">
+            <div class="destinations__tab">Regions</div>
+            <div class="destinations__tab">Cities</div>
+            <div class="destinations__tab">Places</div>
+          </div>
+          <div class="destinations__row">
+            <div class="item-destinations">
+              <div class="item-destinations__icon">
+                <img class="icon-size" src="./images/maldives.jpg" alt="maldives" />
+              </div>
+              <div class="item-name">Maldives</div>
+            </div>
+            <div class="item-destinations">
+              <div class="item-destinations__icon">
+                <img class="icon-size" src="./images/spain.jpg" alt="spain" />
+              </div>
+              <div class="item-name">Spain</div>
+            </div>
+            <div class="item-destinations item-property">
+              <div class="item-destinations__icon">
+                <img class="icon-size" src="./images/norway.jpg" alt="norway" />
+              </div>
+              <div class="item-name">Norway</div>
+            </div>
+            <div class="item-destinations item-property">
+              <div class="item-destinations__icon">
+                <img class="icon-size" src="./images/island.jpg" alt="island" />
+              </div>
+              <div class="item-name">Island</div>
+            </div>
+            <div class="arrow-destinations arrow-design">
+              <div class="arrow-destinations__icon">
+                <svg class="arrow__icon-arrow">
+                  <use href="#arrow" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </section>
+      <section class="container sign-up">
+          <div class="sign-up__wrapper">
+            <div class="sign-up-icon">
+              <svg>
+                <use href="#sign-up-icon" />
+              </svg>
+            </div>
+            <div class="sign-up__row">
+              <p class="sign-up__content">
+                Sign up and get 20% off your first booking
+              </p>
+              <button class="sign-up__button">Sign up</button>
+            </div>
+            <button class="sign-up__button-close"></button>
+          </div>
+          <div class="sign-up__wrapper-media">
+            <div class="sign-up__button-close">
+              <svg class="sign-up-close">
+                <use href="#sign-up-close" />
+              </svg>
+            </div>
+            <div class="sign-up-icon-media">
+              <svg class="sign-up-logo">
+                <use href="#sign-up-logo" />
+              </svg>
+            </div>
+            <div class="sign-up__content">
+              Sign up in the app and get 20% <br>off your first booking
+            </div>
+            <div class="sign-up__install">Install </div>
+          </div>
+        </section>
+      <section class="container guests">
+          <div class="guests__header">
+            <h2 class="guests-title title">Guests reviews</h2>
+          </div>
+          <div class="guests__row">
+            <div class="guests-wrapper guests-wrapper-media">
+              <div class="guests-icon">
+                <img src="./images/bali.jpg" alt="bali" />
+                <div class="guests-wrapper__price">
+                  <div class="guests-wrapper__price-text">From 250 USD</div>
+                </div>
+              </div>
+              <div class="guests-wrapper__name-score">
+                <div class="guests-name ">Ubud Bali Resort&SPA</div>
+                <div class="guests-score">9,4</div>
+              </div>
+              <div class="guests-wrapper__country-reviews">
+                <div class="guests-country">Bali, Indonesia</div>
+                <div class="guests-reviews">1324 reviews</div>
+              </div>
+              <div class="guests-wrapper__person">
+                <div class="person-account">
+                  <svg class="account">
+                    <use href="#account"/>
+                  </svg>
+                </div>
+                <div class="person-name">Hanna Ivanova</div>
+                <div class="person-country">&#127482;&#127462; Ukraine</div>
+              </div>
+              <div class="guests-content">Great location, really pleasant and clean rooms, but the thing that makes this such a good place to stay are the staff. All of the people are incredibly helpful and generous with their time and advice.</div>
+            </div>
+            <div class="guests-wrapper guests-wrapper-rotterdam">
+              <div class="guests-icon">
+                <img src="./images/rotterdam.jpg" alt="rotterdam" />
+                <div class="guests-wrapper__price">
+                  <div class="guests-wrapper__price-text">From 40 USD</div>
+                </div>
+              </div>
+              <div class="guests-wrapper__name-score">
+                <div class="guests-name ">King Kong Hostel</div>
+                <div class="guests-score">8,9</div>
+              </div>
+              <div class="guests-wrapper__country-reviews">
+                <div class="guests-country">Rotterdam, Netherlands</div>
+                <div class="guests-reviews">2016 reviews</div>
+              </div>
+              <div class="guests-wrapper__person">
+                <div class="person-account">
+                  <svg class="account">
+                    <use href="#account"/>
+                  </svg>
+                </div>
+                <div class="person-name">Adam Smith</div>
+                <div class="person-country"> &#x1f1fa;&#x1f1f8; USA</div>
+              </div>
+              <div class="guests-content">I've been in this hostel for a month and here is the best hostel of all</br>
+                Excellent management of excellent and ethical staff and bedrooms Bathrooms are always clean and excellent
+                <br>Most importantly, those who work here are kind and good-natured.</div>
+            </div>
+            <div class="guests-wrapper guests-wrapper-rokoko">
+              <div class="guests-icon">
+                <img src="./images/ourika.jpg" alt="ourika" />
+                <div class="guests-wrapper__price">
+                  <div class="guests-wrapper__price-text">From 100 USD</div>
+                </div>
+              </div>
+              <div class="guests-wrapper__name-score">
+                <div class="guests-name ">Rokoko Hotel</div>
+                <div class="guests-score">9.1</div>
+              </div>
+              <div class="guests-wrapper__country-reviews">
+                <div class="guests-country">Ourika, Marocco</div>
+                <div class="guests-reviews">815 reviews</div>
+              </div>
+              <div class="guests-wrapper__person">
+                <div class="person-account">
+                  <svg class="account">
+                    <use href="#account"/>
+                  </svg>
+                </div>
+                <div class="person-name">Anika Messer</div>
+                <div class="person-country">
+                  <img src="./images/flagGerm.png" alt="flag Germany" aria-label="flag Germany">
+                  Germany</div>
+              </div>
+              <div class="guests-content">Efficient, friendly, professional, and appropriately attentive. Great hotel in a great location. Easy access to all the surrounding historical sites. Staff is fantastic. Will definitely stay at this location during my next stay in Marocco.</div>
+            </div>
+            <button class="arrow-guests "></button>
+            <button class="circles-media">
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="circle"></div>
+            </button>
+          </div>
+        </section>
+    </main>
   <footer class="container footer">
     <div class="footer-block">
       <div class="footer-logo">
@@ -609,8 +600,8 @@
       </div>
       <div class="footer__block-content">
         <div class="footer__about">
-          <nav class="footer__block-content__column">
-            <div class="footer-title"><h1>About</h1></div>
+          <div class="footer__block-content__column">
+            <div class="footer-title"><h2>About</h2></div>
             <div class="footer-text">
               <ul class="footer-content footer-content__about">
                 <li>How Triphouse works</li>
@@ -619,11 +610,11 @@
                 <li>Terms</li>
               </ul>
             </div>
-          </nav>
+          </div>
         </div>
         <div class="footer__property">
-          <nav class="footer__block-content__column">
-            <div class="footer-title"><h1>Property types</h1></div>
+          <div class="footer__block-content__column">
+            <div class="footer-title"><h2>Property types</h2></div>
             <div class="footer-text">
               <ul class="footer-content footer-content__property">
                 <li>Guest houses</li>
@@ -634,18 +625,18 @@
                 <li>Hostels</li>
               </ul>
             </div>
-          </nav>
+          </div>
         </div>
         <div class="footer__support">
-          <nav class="footer__block-content__column">
-            <div class="footer-title"><h1>Support</h1></div>
+          <div class="footer__block-content__column">
+            <div class="footer-title"><h2>Support</h2></div>
             <div class="footer-text">
               <ul class="footer-content footer-content__support">
                 <li>Contact Customer Service</li>
                 <li>FAQ</li>
               </ul>
             </div>
-          </nav>
+          </div>
         </div>
       </div>
       <div class="footer-address">
@@ -653,7 +644,5 @@
       </div>
     </div>
   </footer>
-</div>
-
   </body>
 </html>
