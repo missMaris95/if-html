@@ -21,13 +21,6 @@
   --general-blue: #10367c
 }
 
-/*.trip-house{*/
-/*  display: flex;*/
-/*  flex-direction: column;*/
-/*  flex-wrap: wrap;*/
-/*  box-sizing: border-box;*/
-/*}*/
-
 .container {
   max-width: 1440px;
   padding: 0 104px;
@@ -37,7 +30,7 @@
   font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
-  height: auto;
+  /*height: auto;*/
   background-image: url("../images/fons.jpg");
   background-position: top center;
   background-size: cover;
@@ -46,7 +39,7 @@
 .top-section-title {
   max-width: 1232px;
   width: 100%;
-  margin: 51px auto 0;
+  margin: 45px auto 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -204,13 +197,13 @@
   border: var(--accent-blue);
 }
 
-/*.fon {*/
-/*  max-width: 1232px;*/
-/*  width: 100%;*/
-/*  background-color: #ffffff;*/
-/*  border-radius: 8px;*/
-/*  box-sizing: border-box;*/
-/*}*/
+.fon {
+  max-width: 1232px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
 
 .text {
   font-size: 18px;
@@ -237,12 +230,13 @@
 /*main*/
 .main{
   font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 /*бЛОК OFFER*/
 
 .offer {
-  height: 569px;
   display: flex;
   flex-direction: column;
 }
@@ -255,8 +249,8 @@
 .title {
   font-size: 40px;
   margin: 120px auto 0;
-  line-height: 1.2;
-  font-weight: 500;
+  /*line-height: 1.2;*/
+  /*font-weight: 500;*/
   color: var(--color-dark);
 }
 
@@ -276,10 +270,10 @@
 .offer__row {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  max-width: 1230px;
+  max-width: 1232px;
   width: 100%;
   column-gap: 16px;
-  margin: 105px auto 0;
+  margin: 105px auto;
   place-items: center;
 }
 
@@ -301,83 +295,106 @@
   font-size: 24px;
 }
 
+
 /*block homes*/
-.homes {
-  height: 828px;
-  background-color: var(--bg-color);
-  display: flex;
-  flex-direction: column;
+
+.row{
+  margin-bottom: 110px;
 }
 
-.homes__header {
-  display: flex;
+.col{
+}
+.text-center{
+  color: var(--color-dark);
+  margin-top: 105px;
 }
 
-.homes-title {}
-
-.homes__row {
-  margin: 105px auto;
-  display: grid;
-  grid-template-columns: repeat(4, minmax(156px, 296px));
-  column-gap: 16px;
-  position: relative;
+.text-primary{
+  font-weight: 400;
+  margin: 24px 0;
 }
 
-.item-homes {
-  display: grid;
-  grid-auto-flow: row;
-  grid-template: auto 1fr minmax(60px,auto)/1fr ;
-  row-gap: 24px;
-}
-
-.item-homes__icon{
-  position: relative;
-}
-
-.item-homes__icon img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.item-name {
-  font-size: 24px;
-  line-height: 1.2;
-  color: var(--accent-blue);
-}
-
-.item-homes__country {
-  font-size: 24px;
-  line-height: 1.2;
+.h4{
   color: var(--secondary-text);
 }
 
-.arrow-homes {
-  position: absolute;
-  top: 35%;
-  right: 0;
-  transform: translate(50%, -50%);
-}
 
-.arrow-design {
-  width: 40px;
-  height: 40px;
-  border-radius: 50px;
-  background-color: #f3f3f3;
-  box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.2);
-}
+/*block homes*/
+/*.homes {*/
+/*  background-color: var(--bg-color);*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*}*/
 
-.arrow-homes__icon {
-  position: absolute;
-  right: 50%;
-  bottom: 50%;
-  transform: translate(50%, 50%);
-}
+/*.homes__header {*/
+/*  display: flex;*/
+/*}*/
 
-.arrow__icon-arrow {
-  width: 9px;
-  height: 21px;
-}
+/*.homes-title {}*/
+
+/*.homes__row {*/
+/*  margin: 105px auto;*/
+/*  display: grid;*/
+/*  grid-template-columns: repeat(4, minmax(156px, 296px));*/
+/*  column-gap: 16px;*/
+/*  position: relative;*/
+/*}*/
+
+/*.item-homes {*/
+/*  display: grid;*/
+/*  grid-auto-flow: row;*/
+/*  grid-template: auto 1fr minmax(60px,auto)/1fr ;*/
+/*  row-gap: 24px;*/
+/*}*/
+
+/*.item-homes__icon{*/
+/*  position: relative;*/
+/*}*/
+
+/*.item-homes__icon img {*/
+/*  width: 100%;*/
+/*  height: 100%;*/
+/*  object-fit: cover;*/
+/*}*/
+
+/*.item-name {*/
+/*  font-size: 24px;*/
+/*  line-height: 1.2;*/
+/*  color: var(--accent-blue);*/
+/*}*/
+
+/*.item-homes__country {*/
+/*  font-size: 24px;*/
+/*  line-height: 1.2;*/
+/*  color: var(--secondary-text);*/
+/*}*/
+
+/*.arrow-homes {*/
+/*  position: absolute;*/
+/*  top: 35%;*/
+/*  right: 0;*/
+/*  transform: translate(50%, -50%);*/
+/*}*/
+
+/*.arrow-design {*/
+/*  width: 40px;*/
+/*  height: 40px;*/
+/*  border-radius: 50px;*/
+/*  background-color: #f3f3f3;*/
+/*  box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.2);*/
+/*}*/
+
+/*.arrow-homes__icon {*/
+/*  position: absolute;*/
+/*  right: 50%;*/
+/*  bottom: 50%;*/
+/*  transform: translate(50%, 50%);*/
+/*}*/
+
+/*.arrow__icon-arrow {*/
+/*  width: 9px;*/
+/*  height: 21px;*/
+/*}*/
 
 /*block destinations*/
 .destinations {
@@ -495,13 +512,6 @@
 
 /*block sign-up*/
 .sign-up {
-  /*font-family: "Roboto", sans-serif;*/
-  /*background-color: var(--bg-color);*/
-  /*max-width: 1232px;*/
-  /*min-width: 1232px;*/
-  /*width: 100%;*/
-  /*margin: 0 auto;*/
-  /*height: 200px;*/
 }
 
 .sign-up__wrapper {
@@ -633,13 +643,6 @@
 
 .arrow-guests:active {
   top: 25.5%;
-}
-
-.arrow-guests__icon {
-  /*position: absolute;*/
-  /*top: 25%;*/
-  /*right: 50%;*/
-  /*transform: translate(50%, 0);*/
 }
 
 .guests-wrapper__name-score,
@@ -845,10 +848,6 @@
   }
 
   /*offer*/
-  .offer {
-    height: 400px;
-  }
-
   .title {
     font-size: 36px;
     margin: 65px auto 0;
@@ -856,7 +855,7 @@
 
   .offer__row {
     column-gap: 8px;
-    margin: 80px auto 0;
+    margin: 80px auto;
   }
 
   .item-offer {
@@ -874,9 +873,6 @@
   }
 
   /*homes*/
-  .homes {
-    height: 700px;
-  }
 
   .homes__row {
     max-width: 1024px;
@@ -890,6 +886,7 @@
 
   /*destinations*/
   .destinations__row {
+    margin-bottom: 160px;
     gap: 8px;
   }
 
@@ -904,7 +901,6 @@
   }
 
   /*block guests*/
-
   .guests__row {
     margin: 80px auto;
     display: grid;
@@ -1108,9 +1104,6 @@
   }
 
   /*offer*/
-  .offer {
-    height: 515px;
-  }
 
   .offer-title:after {
     display: none;
@@ -1121,7 +1114,7 @@
     grid-template-columns: repeat(auto-fit, minmax(221px, 1fr));
     max-width: 540px;
     row-gap: 35px;
-    margin: 55px auto 0;
+    margin: 55px auto;
   }
 
   .title {
@@ -1130,9 +1123,6 @@
   }
 
   /*homes*/
-  .homes {
-    height: 530px;
-  }
 
   .homes__row {
     margin: 70px auto;
@@ -1151,10 +1141,6 @@
   }
 
   /*destinations*/
-
-  .destinations {
-    height: 590px;
-  }
 
   .destinations__tabs {
     margin-top: 52px;
@@ -1179,8 +1165,6 @@
   }
 
   .sign-up__button {
-    width: 118px;
-    height: 48px;
     font-size: 16px;
   }
 
@@ -1237,6 +1221,12 @@
 
   }
 
+  .discovery-title {
+    max-width: 328px;
+    width: 100%;
+    margin: 50px auto 0;
+  }
+
   .top-section-title {
     max-width: 328px;
     margin: 8px auto 0;
@@ -1259,11 +1249,6 @@
 
   /*Block OFFER*/
 
-  .offer {
-    height: 641px;
-
-  }
-
   .offer-title:after {
     display: none;
   }
@@ -1275,7 +1260,7 @@
 
   .offer__row {
     row-gap: 30px;
-    margin: 25px auto 0;
+    margin: 25px auto;
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   }
 
@@ -1293,9 +1278,6 @@
   }
 
   /*homes*/
-  .homes {
-    height: 354px;
-  }
 
   .homes__row {
     margin: 30px auto;
@@ -1401,7 +1383,7 @@
   .sign-up{
     height: 106px;
     background-color: var(--color-white);
-    order: 6;
+    order: 4;
   }
 
   .sign-up__wrapper {
@@ -1416,9 +1398,12 @@
     padding: 24px 16px;
   }
 
-  .sign-up__button-close svg{
-    width: 16px;
-    height: 16px;
+  .sign-up__button-close {
+    background-image: url("../images/close.png");
+    background-color: var(--color-white);
+    background-size: cover;
+    width: 20px;
+    height: 20px;
   }
 
   .sign-up-icon-media {
@@ -1450,12 +1435,12 @@
     font-size: 14px;
     line-height: 1.2;
     font-weight: 500;
+    text-decoration: none;
   }
 
   /*Guests*/
 
   .guests{
-    order: 5;
     background-color: var(--bg-color);
   }
 
@@ -1527,9 +1512,11 @@
     display: none;
   }
 
-  .circles-media{
+  .circles-media {
     display: flex;
     margin: 0 auto;
+    border: none;
+    background-color: var(--bg-color);
   }
 
   .circle{
@@ -1542,9 +1529,8 @@
 
   .circle:first-child{
     background-color: #333333;
+
   }
-
-
 
   /*FOOTER*/
   .footer-block {
