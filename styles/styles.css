@@ -21,24 +21,23 @@
   --general-blue: #10367c
 }
 
-.container {
+.container-my {
   max-width: 1440px;
+  width: 100%;
   padding: 0 104px;
+  margin: 0 auto;
 }
 
 .top-section {
-  font-family: "Roboto", sans-serif;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  /*height: auto;*/
   background-image: url("../images/fons.jpg");
   background-position: top center;
   background-size: cover;
 }
 
 .top-section-title {
-  max-width: 1232px;
-  width: 100%;
   margin: 45px auto 0;
   display: flex;
   align-items: center;
@@ -84,6 +83,11 @@
   transition-property: opacity;
 }
 
+.stays a:hover,
+.attractions a:hover{
+  color: var(--color-white);
+}
+
 .top-section__stay-attraction:after {
   content: "";
   opacity: 0;
@@ -119,17 +123,15 @@
 }
 
 .discovery-title {
-  margin-top: 200px;
+  margin-top: 185px;
   font-size: 50px;
-  line-height: 1.2;
-  font-weight: 500;
   color: var(--color-white);
 }
 
 .discovery-content {
   font-size: 18px;
   color: var(--color-white);
-  margin-top: 100px;
+  margin-top: 95px;
   margin-left: 24px;
   display: flex;
   justify-content: space-between;
@@ -145,7 +147,7 @@
   display: grid;
   grid-template-rows: 64px;
   grid-template-columns: minmax(120px, 465px) 259px 314px minmax(100px, 192px);
-  margin: 25px auto 0;
+  margin: 8px auto 0;
   background-color: var(--color-white);
   border-radius: 8px;
 }
@@ -153,10 +155,9 @@
 .discovery-search__nw {
   grid-column: 1;
   display: grid;
-  padding: 0 32px;
-  align-items: center;
   border: 3px solid var(--color-white);
   border-radius: 8px;
+  margin: 16px 24px ;
 }
 
 .discovery-search__nw:hover {
@@ -165,8 +166,6 @@
 
 .discovery-search__data {
   grid-column: 2;
-  display: grid;
-  place-items: center;
   border: 3px solid var(--color-white);
   border-radius: 8px;
 }
@@ -177,10 +176,13 @@
 
 .discovery-search__people {
   grid-column: 3;
-  display: grid;
-  place-items: center;
   border: 3px solid var(--color-white);
   border-radius: 8px;
+}
+
+.discovery-search__data,
+.discovery-search__people{
+  margin: 16px auto;
 }
 
 .discovery-search__people:hover {
@@ -198,7 +200,6 @@
 }
 
 .fon {
-  max-width: 1232px;
   width: 100%;
   background-color: #ffffff;
   border-radius: 8px;
@@ -207,7 +208,6 @@
 
 .text {
   font-size: 18px;
-  line-height: 1.2;
 }
 
 .discovery-content__media {
@@ -217,7 +217,7 @@
 .block-apps {
   display: flex;
   margin: 120px auto;
-  justify-content: space-between;
+  justify-content: center;
   column-gap: 8px;
 }
 
@@ -229,7 +229,6 @@
 
 /*main*/
 .main{
-  font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
 }
@@ -249,8 +248,6 @@
 .title {
   font-size: 40px;
   margin: 120px auto 0;
-  /*line-height: 1.2;*/
-  /*font-weight: 500;*/
   color: var(--color-dark);
 }
 
@@ -273,7 +270,7 @@
   max-width: 1232px;
   width: 100%;
   column-gap: 16px;
-  margin: 105px auto;
+  margin: 100px auto 115px;
   place-items: center;
 }
 
@@ -293,108 +290,36 @@
 
 .item-offer__title {
   font-size: 24px;
+  width: max-content;
 }
-
 
 /*block homes*/
 
-.row{
-  margin-bottom: 110px;
-}
-
-.col{
-}
-.text-center{
+.homes-title {
   color: var(--color-dark);
-  margin-top: 105px;
+  margin: 115px 0 110px;
 }
 
-.text-primary{
-  font-weight: 400;
-  margin: 24px 0;
+.carousel {
+  margin-bottom: 120px;
 }
 
-.h4{
-  color: var(--secondary-text);
+.carousel-control-prev-icon {
+  background-image: url("../images/icon-left.svg ") !important;
 }
 
+.carousel-control-next-icon{
+  background-image: url("../images/icon-right.svg") !important;
+}
 
-/*block homes*/
-/*.homes {*/
-/*  background-color: var(--bg-color);*/
-/*  display: flex;*/
-/*  flex-direction: column;*/
-/*}*/
+.card{
+  max-width: 296px;
+  width: 100%;
+}
 
-/*.homes__header {*/
-/*  display: flex;*/
-/*}*/
-
-/*.homes-title {}*/
-
-/*.homes__row {*/
-/*  margin: 105px auto;*/
-/*  display: grid;*/
-/*  grid-template-columns: repeat(4, minmax(156px, 296px));*/
-/*  column-gap: 16px;*/
-/*  position: relative;*/
-/*}*/
-
-/*.item-homes {*/
-/*  display: grid;*/
-/*  grid-auto-flow: row;*/
-/*  grid-template: auto 1fr minmax(60px,auto)/1fr ;*/
-/*  row-gap: 24px;*/
-/*}*/
-
-/*.item-homes__icon{*/
-/*  position: relative;*/
-/*}*/
-
-/*.item-homes__icon img {*/
-/*  width: 100%;*/
-/*  height: 100%;*/
-/*  object-fit: cover;*/
-/*}*/
-
-/*.item-name {*/
-/*  font-size: 24px;*/
-/*  line-height: 1.2;*/
-/*  color: var(--accent-blue);*/
-/*}*/
-
-/*.item-homes__country {*/
-/*  font-size: 24px;*/
-/*  line-height: 1.2;*/
-/*  color: var(--secondary-text);*/
-/*}*/
-
-/*.arrow-homes {*/
-/*  position: absolute;*/
-/*  top: 35%;*/
-/*  right: 0;*/
-/*  transform: translate(50%, -50%);*/
-/*}*/
-
-/*.arrow-design {*/
-/*  width: 40px;*/
-/*  height: 40px;*/
-/*  border-radius: 50px;*/
-/*  background-color: #f3f3f3;*/
-/*  box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.2);*/
-/*}*/
-
-/*.arrow-homes__icon {*/
-/*  position: absolute;*/
-/*  right: 50%;*/
-/*  bottom: 50%;*/
-/*  transform: translate(50%, 50%);*/
-/*}*/
-
-/*.arrow__icon-arrow {*/
-/*  width: 9px;*/
-/*  height: 21px;*/
-/*}*/
+.card-size{
+  margin: 8px 0 16px -16px;
+}
 
 /*block destinations*/
 .destinations {
@@ -425,7 +350,7 @@
   border-radius: 8px;
   background-color: var(--bg-color);
   max-width: 622px;
-  grid-template-columns: 192px 192px 1fr;
+  grid-template-columns: 0.8fr 0.8fr 1fr;
   grid-template-rows: 63px;
   place-items: center;
   box-sizing: border-box;
@@ -455,40 +380,40 @@
   margin-top: 65px;
   margin-bottom: 210px;
   display: flex;
-  justify-content: space-between;
   gap: 16px;
   position: relative;
 }
 
-.item-destinations {
+.destination-link{
+  text-decoration: none;
+}
+
+.item-destination {
   display: flex;
   flex-direction: column;
   gap: 24px;
   position: relative;
 }
 
-.item-destinations:hover {
+.icon-size:hover{
   filter: brightness(70%);
 }
 
-.item-destinations__icon{
-  position: relative;
-}
-
-.item-destinations__icon:hover:before {
+.item-destination:hover:before {
   content: "Book now";
-  display: grid;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translate(50%, -50%);
-  width: 126px;
-  height: 48px;
-  place-items: center;
   color: var(--accent-blue);
   background-color: var(--color-white);
   border-radius: 8px;
   border: 1px solid var(--accent-blue);
+  place-items: center;
+  display: grid;
+  width: 126px;
+  height: 48px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  z-index: 2;
 }
 
 .icon-size {
@@ -504,15 +429,15 @@
 }
 
 .arrow-destinations__icon {
-  position: absolute;
-  top: 12%;
-  left: 6%;
-  transform: rotate(90deg) translate(50%, -50%);
+  transform: rotate(90deg) ;
+}
+
+.arrow__icon-arrow {
+  width: 9px;
+  height: 21px;
 }
 
 /*block sign-up*/
-.sign-up {
-}
 
 .sign-up__wrapper {
   display: grid;
@@ -645,11 +570,16 @@
   top: 25.5%;
 }
 
-.guests-wrapper__name-score,
+.guests-wrapper__name-score{
+  display: flex;
+  justify-content: space-between;
+  margin: 16px 24px
+}
+
 .guests-wrapper__country-reviews {
   display: flex;
   justify-content: space-between;
-  margin: 30px 24px -24px;
+  margin: -4px 24px
 }
 
 .guests-name,
@@ -683,7 +613,7 @@
   grid-template-columns: 64px auto;
   grid-template-rows: 32px 32px;
   column-gap: 16px;
-  margin: 24px 24px 0;
+  margin: 8px 24px;
 }
 
 .person-account{
@@ -702,7 +632,6 @@
   font-size: 18px;
   color: var(--color-dark);
   display: grid;
-  align-items: end;
   grid-row: 1;
   grid-column: 2;
 }
@@ -711,7 +640,6 @@
   font-size: 18px;
   color: var(--secondary-text);
   display: flex;
-  align-items: center;
   gap: 8px;
 }
 
@@ -724,7 +652,7 @@
   font-size: 18px;
   color: var(--color-dark);
   line-height: 1.16;
-  margin: 24px;
+  margin: 3px 24px;
 }
 
 .circles-media{
@@ -800,8 +728,16 @@
 }
 
 @media (max-width: 1024px) {
+
+  .container-my{
+    padding: 0 52px;
+  }
+
+  .top-section {
+    padding: 0 ;
+  }
+
   .discovery-search {
-    max-width: 810px;
     width: 100%;
   }
 
@@ -816,10 +752,9 @@
   .discovery-content__title-media {
     display: flex;
     margin-top: 100px;
-    margin-left: 35px;
+    margin-left: 15px;
     column-gap: 80px;
     color: var(--color-white);
-    font-family: "Roboto", sans-serif;
   }
 
   .title-check {
@@ -832,10 +767,11 @@
     font-size: 15px;
     display: grid;
     grid-template-rows: 64px;
-    grid-template-columns: minmax(105px, 465px) minmax(189px, 259px) 258px minmax(
-        100px,
-        192px
-      );
+    grid-template-columns: minmax(100px, 465px) minmax(189px, 259px) 258px minmax(100px, 192px);
+  }
+
+  .discovery-search__nw{
+    margin: 16px ;
   }
 
   .text {
@@ -872,32 +808,17 @@
     font-size: 18px;
   }
 
-  /*homes*/
-
-  .homes__row {
-    max-width: 1024px;
-    width: 100%;
-    margin: 80px auto;
-  }
-
-  .arrow-homes {
-    top: 27%;
+  .card-size{
+    font-size: 18px;
   }
 
   /*destinations*/
+
   .destinations__row {
     margin-bottom: 160px;
-    gap: 8px;
-  }
-
-  .item-destinations__icon:hover:before {
-    transform: translate(30%, -50%);
-    width: 96px;
-  }
-
-  .icon-size {
-    width: 100%;
-    height: 100%;
+    row-gap: 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   /*block guests*/
@@ -919,12 +840,8 @@
 }
 
 @media (max-width: 768px) {
-  .container {
+  .container-my {
     padding: 0 52px;
-  }
-
-  .top-section {
-    /*height: 533px;*/
   }
 
   .top-section-title {
@@ -1001,6 +918,7 @@
 
   .discovery-container__media {
     margin: 35px auto;
+    padding: 8px;
     width: 100%;
     background-color: var(--accent-yellow);
   }
@@ -1012,7 +930,6 @@
     row-gap: 8px;
     margin: 8px;
     color: var(--color-dark);
-    font-family: "Roboto", sans-serif;
   }
 
   .discovery-content__title-media {
@@ -1023,20 +940,11 @@
     grid-column: 1;
     display: flex;
     align-items: center;
-    border: 1px solid #000000;
   }
 
-  .fon {
-    margin: 0 auto;
-    background-color: #ffffff;
-    border: 1px solid #ffffff;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-
-  .hotel-name img {
-    width: 16px;
+  .hotel-name img{
     height: 16px;
+    width: 16px;
     margin-left: 10px;
   }
 
@@ -1045,7 +953,6 @@
     font-size: 15px;
     line-height: 1.2;
     margin-left: 8px;
-    align-items: end;
   }
 
   .text {
@@ -1123,34 +1030,49 @@
   }
 
   /*homes*/
-
-  .homes__row {
-    margin: 70px auto;
+  .card-size{
+    font-size: 14px;
   }
 
-  .item-homes {
-    row-gap: 16px;
+  .homes-title {
+    margin: 60px 0 ;
   }
 
-  .item-name {
-    font-size: 18px;
-  }
-
-  .item-homes__country {
-    font-size: 18px;
+  .carousel {
+    margin-bottom: 60px;
   }
 
   /*destinations*/
+  .destinations__title:hover:after {
+   display: none;
+  }
 
-  .destinations__tabs {
-    margin-top: 52px;
-    max-width: 490px;
-    grid-template-columns: 132px 132px 1fr;
-    grid-template-rows: 53px;
+  .destinations__tabs{
+    display: none;
+  }
+
+  .destinations__tabs-media {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 40px;
+    background-color: var(--bg-color);
+    max-width: 360px;
+    width: 100%;
+    border-radius: 8px;
   }
 
   .destinations__tab {
-    font-size: 24px;
+    padding: 16px ;
+    border-radius: 8px;
+  }
+
+  .destinations__tab:hover {
+    border-radius: 8px;
+    background-color: var(--accent-blue);
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+    place-items: center;
   }
 
   /*sign-up*/
@@ -1172,8 +1094,12 @@
   .guests__row {
     margin: 60px auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 16px;
+    grid-template-columns: 1fr ;
+    row-gap: 40px;
+  }
+
+  .arrow-guests{
+    display: none;
   }
 
   /*footer*/
@@ -1213,33 +1139,25 @@
 }
 
 @media (max-width: 480px) {
-  .container {
+  .container-my {
     padding: 0 16px;
   }
 
-  .top-section{
-
-  }
-
   .discovery-title {
-    max-width: 328px;
-    width: 100%;
-    margin: 50px auto 0;
+    margin: 35px auto 0;
   }
 
   .top-section-title {
-    max-width: 328px;
-    margin: 8px auto 0;
+    margin: -8px auto 0;
+  }
+
+  .discovery-content__media {
+    margin: 0;
   }
 
   .discovery-container__media {
     min-width: 300px;
     margin: 30px auto;
-    max-width: 328px;
-  }
-
-  .discovery-content__media {
-    grid-template-columns: 312px;
   }
 
   .block-discovery {
@@ -1247,15 +1165,18 @@
     font-size: 30px;
   }
 
-  /*Block OFFER*/
+  .block-apps {
+    margin: 35px auto;
+  }
 
+  /*Block OFFER*/
   .offer-title:after {
     display: none;
   }
 
   .title {
     font-size: 28px;
-    margin: 40px auto 0;
+    margin: 25px auto 0;
   }
 
   .offer__row {
@@ -1265,7 +1186,11 @@
   }
 
   .item-offer {
-    row-gap: 11px;
+    row-gap: 8px;
+  }
+
+  .item-offer-online{
+    margin-top: -8px;
   }
 
   .item-offer__icon svg {
@@ -1278,81 +1203,38 @@
   }
 
   /*homes*/
-
-  .homes__row {
-    margin: 30px auto;
-    display: grid;
-    grid-template-columns: repeat(2, 156px );
-    column-gap: 16px;
-    justify-content: center;
-  }
-
-  .item-homes {
-    grid-template-rows: 155px auto 1fr;
-    row-gap: 8px;
-  }
-
-  .item-property{
-    display: none;
-  }
-
-  .item-name {
-    font-size: 12px;
-  }
-
-  .item-homes__country {
-    font-size: 12px;
-    margin-top: -5px;
-    max-width: 140px;
-  }
-
-  .arrow-homes {
-    top: 36%;
-    left: 80%;
+  .homes-title {
+    color: var(--color-dark);
+    margin: 45px 0;
   }
 
   /*destinations*/
-
-  .destinations {
-    height: 379px;
-  }
-
-  .destinations__tabs {
-    display: none;
-  }
+.destinations__row{
+  margin: 24px 0;
+}
 
   .destinations__tabs-media {
-    display: grid;
-    place-items: center;
-    grid-template-columns: repeat(3, 98px);
-    grid-template-rows: 32px;
+    grid-template-columns: repeat(3, 1fr);
+    background-color:var(--color-white);
+    width: 100%;
+    margin-top:35px;
     column-gap: 16px;
-    margin: 30px auto 0;
   }
-
   .destinations__tab {
     font-size: 19px;
-  }
-
-  .destinations__tab:hover {
-    grid-template-columns: minmax(98px, 140px);
-    grid-template-rows: 32px;
-  }
-
-  .destinations__row {
-    margin-top: 24px;
+    border: 1px solid var(--bg-color);
+    width: 98px;
+    padding: 0 8px 4px;
+    display: flex;
     justify-content: center;
-    gap: 16px;
-    position: relative;
+    border-radius: 4px;
   }
 
-  .item-destinations {
-    gap: 8px;
-  }
-
-  .icon-size {
-    width: 155px;
-    height: 155px;
+  .destinations__tab:hover{
+    background-color: var(--accent-blue);
+    justify-content: center;
+    display: flex;
+    border-radius: 4px;
   }
 
   .arrow-destinations {
@@ -1376,7 +1258,6 @@
     width: 7px;
     height: 13px;
   }
-
 
   /*sign-up*/
 
@@ -1552,7 +1433,6 @@
   .footer-logo {
     display: flex;
     height: 19px;
-    fill: var(--color-white);
     margin-top: 40px;
     justify-content: center;
   }
@@ -1575,7 +1455,7 @@
     font-size: 20px;
   }
 
-  .footer-title {
+  .footer-title h5 {
     font-size: 15px;
     text-decoration: underline;
   }
