@@ -267,26 +267,48 @@
         <h2 class="discovery-title" >
           Discover stays<br />to live,work or just relax
         </h2>
-        <div class="discovery-content">
-          <p class="title-name">Your destination or hotel name</p>
-          <p class="title-check">Check-in — Check-out</p>
-        </div>
-        <div class="discovery-content__title-media">
-          <p class="title-name">Hotel name</p>
-          <p class="title-check">Check-in — Check-out</p>
-        </div>
+
+
         <div class="discovery-search bg-white">
-          <div class="discovery-search__nw">
-            <p class="text">New York</p>
+          <form class="text-form" action="#">
+            <label  class="label-name" for="text">Your destination or hotel name</label>
+            <input class="discovery-input" id="text" type="text" name="name" placeholder="New York">
+          </form>
+          <div class="discovery-filter">
+            <form class="text-form" action="#">
+              <label class="label-data" for="data">Check-in — Check-out</label>
+              <input class="discovery-input" id="data" type="text" name="data" placeholder="Tue 15 Sept - Sat 19 Sept">
+            </form>
+            <form class="text-form" action="#">
+              <label class="label-data" >.</label>
+              <input class="discovery-input people-input" id="people" type="text" name="people" placeholder="2 Adults - 0 Children - 1 Room">
+            </form>
+            <button class="discovery__bottom" type="submit">Search</button>
           </div>
-          <div class="discovery-search__data">
-            <p class="text">Tue 15 Sept — Sat 19 Sept</p>
-          </div>
-          <div class="discovery-search__people">
-            <p class="text">2 Adults — 0 Children — 1 Room</p>
-          </div>
-          <button class="discovery__bottom" type="submit">Search</button>
         </div>
+
+<!--        <div class="discovery-search bg-white">-->
+<!--          <div class="discovery-wrap discovery-wrap__name">Your destination or hotel name-->
+<!--            <form class="text-form" action="#">-->
+<!--              <input class="discovery-input" id="name" type="text" name="name" placeholder="New York">-->
+<!--            </form>-->
+<!--          </div>-->
+<!--          <div class="discovery-wrap discovery-wrap__check">Check-in — Check-out-->
+<!--            <form class="text-form" action="#">-->
+<!--              <input class="discovery-input" id="data" type="text" name="data" placeholder="Tue 15 Sept - Sat 19 Sept ">-->
+<!--            </form>-->
+<!--          </div>-->
+<!--          <div class="discovery-wrap discovery-wrap__people">.-->
+<!--            <form class="text-form" action="#">-->
+<!--              <input class="discovery-input" id="people" type="text" name="data" placeholder="2 Adults - 0 Children - 1 Room"/>-->
+<!--            </form>-->
+<!--          </div>-->
+<!--          <button class="discovery__bottom" type="submit">Search</button>-->
+<!--        </div>-->
+
+
+
+
         <div class="discovery-container__media">
           <div class="discovery-content__media">
             <div class="hotel-name container-fluid bg-white">
@@ -336,9 +358,9 @@
 
   </header>
       <main class="main">
-        <section class="container offer">
+        <section class="container-my offer">
           <div class="offer__header">
-            <h2 class="offer-title title">What do we offer</h2>
+            <h2 class="offer-title title text-center">What do we offer</h2>
           </div>
           <div class="offer__row">
             <div class="item-offer">
