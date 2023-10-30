@@ -1,0 +1,145 @@
+.footer {
+  background-color: #10367c;
+  display: flex;
+}
+
+.footer-block {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 80px;
+  max-width: 1232px;
+  width: 100%;
+}
+
+.footer-logo {
+  display: none;
+}
+
+.footer__block-content {
+  margin-top: 120px;
+  max-width: 1232px;
+  width: 100%;
+  color: $color-white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 24px;
+}
+
+.footer__block-content__column {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  font-size: 20px;
+}
+
+.footer-title {
+  font-weight: 500;
+  font-size: 24px;
+
+  h5 {
+    margin: 0;
+  }
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+  row-gap: 24px;
+  margin: 0;
+  padding-left: 0;
+
+  li {
+    list-style-type: none;
+  }
+}
+
+.footer-address {
+  margin-top: 45px;
+  color: $color-white;
+  font-size: 14px;
+}
+
+// ---------------------------media 1024 --------------------
+@media (max-width: 1024px) {
+  .footer__block-content__column {
+    font-size: 18px;
+  }
+}
+
+// ---------------------------media 768  --------------------
+@media (max-width: 768px) {
+  .footer {
+    order: 7;
+  }
+
+  .footer__block-content {
+    margin: 40px auto;
+    font-size: 24px;
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-logo {
+    display: flex;
+    margin-top: 80px;
+    justify-content: center;
+
+    svg {
+      height: 32px;
+    }
+  }
+
+  .footer__block-content {
+    margin: 40px auto;
+    font-size: 18px;
+    text-decoration: underline;
+    font-weight: 400;
+  }
+
+  .footer-text {
+    display: none;
+  }
+
+  .footer-address {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+  }
+}
+
+// ---------------------------media 480  --------------------
+@media (max-width: 480px) {
+  .footer-block {
+    margin: 0 auto 30px;
+  }
+
+  .footer__block-content {
+    margin: 40px auto;
+    font-size: 18px;
+  }
+
+  .footer-logo {
+    margin-top: 40px;
+
+    svg {
+      height: 19px;
+    }
+  }
+
+  .footer__block-content {
+    margin: 40px auto 20px;
+  }
+
+  .footer-title {
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  .footer-address {
+    font-size: 12px;
+    margin-top: 0;
+  }
+}

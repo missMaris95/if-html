@@ -1,0 +1,31 @@
+$color-white: #fff;
+$color-dark: #383838;
+$accent-yellow: #f5bd41;
+$bg-color: #eaf0f9;
+$secondary-text: #bfbfbf;
+$accent-blue: #3077c6;
+$general-blue: #10367c;
+
+* {
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+
+.sprite {
+  width: 0;
+  height: 0;
+  position: absolute;
+  visibility: hidden; // из-за этих настроек не высвечивался знак гугла
+}
+
+.container-my {
+  max-width: 1440px;
+  width: 100%;
+  padding: 0 104px;
+  margin: 0 auto;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}

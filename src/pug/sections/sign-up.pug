@@ -1,0 +1,21 @@
+mixin sign-up
+  section.container-my.sign-up
+    .sign-up__wrapper
+      .sign-up-icon
+        svg
+          use(href='#sign-up-icon')
+      .sign-up__row
+        p.sign-up__content
+          | Sign up and get 20% off your first booking
+        button.sign-up__button Sign up
+      button.sign-up__button-close
+    .sign-up__wrapper-media
+      button.sign-up__button-close
+      .sign-up-icon-media
+        svg.sign-up-logo
+          use(href='#sign-up-logo')
+      p.sign-up__content
+        | Sign up in the app and get 20%
+        br
+        | off your first booking
+      a.sign-up__install(href='#', target='_blank') Install

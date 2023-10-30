@@ -1,0 +1,23 @@
+include ../sections/header
+include ../sections/offer
+include ../sections/homes
+include ../sections/destinations
+include ../sections/sign-up
+include ../sections/guests
+include ../sections/footer
+
+include ../components/page
+include ../components/sprite
+
+- var pageInfo = { title: 'Trip House' };
+
++page(pageInfo)
+  +sprite
+  +header
+  main.main
+    +offer
+    +homes
+    +destinations
+    +sign-up
+    +guests
+  +footer
