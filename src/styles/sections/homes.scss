@@ -1,0 +1,136 @@
+.homes {
+  background-color: $bg-color;
+  display: flex;
+  flex-direction: column;
+}
+
+.homes__header {
+  display: flex;
+}
+
+.homes__row {
+  margin: 105px auto 120px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(156px, 296px));
+  column-gap: 16px;
+  position: relative;
+}
+
+.item-homes {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template: auto 1fr minmax(60px, auto) / 1fr;
+  row-gap: 24px;
+}
+
+.item-homes__icon {
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.item-name {
+  font-size: 24px;
+  line-height: 1.2;
+  color: $accent-blue;
+  font-weight: 400;
+}
+
+.item-homes__country {
+  font-size: 24px;
+  line-height: 1.2;
+  color: $secondary-text;
+}
+
+.arrow-homes {
+  position: absolute;
+  top: 35%;
+  right: 0;
+  transform: translate(50%, -50%);
+}
+
+.arrow-design {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: #f3f3f3;
+  box-shadow: 0 4px 4px 1px rgb(0 0 0 / 20%);
+}
+
+.arrow-homes__icon {
+  position: absolute;
+  right: 50%;
+  bottom: 50%;
+  transform: translate(50%, 50%);
+}
+
+// ---------------------------media 1024 --------------------
+@media (max-width: 1024px) {
+  .homes__row {
+    margin: 65px auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    row-gap: 32px;
+  }
+
+  .arrow-homes {
+    display: none;
+  }
+}
+// ---------------------------media 768  --------------------
+@media (max-width: 768px) {
+  .homes__row {
+    margin: 45px auto;
+    row-gap: 16px;
+  }
+
+  .item-homes {
+    row-gap: 16px;
+  }
+
+  .item-name {
+    font-size: 18px;
+  }
+
+  .item-homes__country {
+    font-size: 18px;
+  }
+
+  .item-property {
+    display: none;
+  }
+
+  .arrow-homes {
+    display: flex;
+  }
+}
+
+// ---------------------------media 480  --------------------
+@media (max-width: 480px) {
+  .homes-title {
+    margin: 45px 0 35px;
+  }
+
+  .homes__row {
+    margin: 0 auto 10px;
+    row-gap: 8px;
+  }
+
+  .item-homes {
+    row-gap: 0;
+  }
+
+  .item-name {
+    font-size: 12px;
+  }
+
+  .item-homes__country {
+    font-size: 12px;
+  }
+
+  .arrow-homes {
+    display: flex;
+  }
+}

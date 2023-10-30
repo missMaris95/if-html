@@ -1,0 +1,30 @@
+mixin homes
+  section.homes
+    .container-my
+      .homes__header
+        h2.homes-title.title Homes guests loves
+      .homes__row
+        .item-homes
+          .item-homes__icon
+            img(src=require('../../assets/images/hotel.jpg'), alt='hotel')
+          .item-name Hotel Leopold
+          .item-homes__country Saint Petersburg, Russia
+        .item-homes
+          .item-homes__icon
+            img(src=require('../../assets/images/apartments.jpg'), alt='apartments')
+          .item-name Apartment Sunshine
+          .item-homes__country Santa Cruz de Tenerife, Spain
+        .item-homes.item-property
+          .item-homes__icon
+            img(src=require('../../assets/images/villa.jpg'), alt='villa')
+          .item-name Villa Kunerad
+          .item-homes__country Vysokie Tatry, Slowakia
+        .item-homes.item-property
+          .item-homes__icon
+            img(src=require('../../assets/images/hostel.jpg'), alt='hostel')
+          .item-name Hostel Friendship
+          .item-homes__country Berlin, Germany
+        .arrow-homes.arrow-design
+          .arrow-homes__icon
+            svg.arrow__icon-arrow
+              use(href='#arrow')

@@ -1,0 +1,32 @@
+mixin destinations
+  section.container-my.destinations
+    .destinations__header
+      h2.destinations__title.title The best destinations
+    .destinations__tabs
+      .destinations__tab Regions
+      .destinations__tab Cities
+      .destinations__tab Places of interest
+    .destinations__tabs-media
+      .destinations__tab Regions
+      .destinations__tab Cities
+      .destinations__tab Places
+    .destinations__row
+      a.destination-link(href='#')
+        .item-destination
+          img.icon-size(src=require('../../assets/images/maldives.jpg'), alt='maldives')
+          h4.item-name Maldives
+      a.destination-link(href='#')
+        .item-destination
+          img.icon-size(src=require('../../assets/images/spain.jpg'), alt='spain')
+          h4.item-name Spain
+      a.destination-link(href='#')
+        .item-destination.item-property
+          img.icon-size(src=require('../../assets/images/norway.jpg'), alt='norway')
+          h4.item-name Norway
+      a.destination-link(href='#')
+        .item-destination.item-property
+          img.icon-size(src=require('../../assets/images/island.jpg'), alt='island')
+          h4.item-name Island
+      .arrow-destinations.arrow-design
+        svg.arrow__icon-arrow.icon-arrow-dest
+          use(href='#arrow')

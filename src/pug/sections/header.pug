@@ -1,0 +1,76 @@
+mixin header
+  header.top-section
+    .container-my
+      .top-section-title
+        h1.top-section-basic-title(aria-hidden='true') Trip House
+        a(href='#')
+          svg.top-section__logo
+            use(href='#logo')
+        nav.top-section__menu
+          ul.top-section__row
+            li.stays
+              a.top-section__stay-attraction(href='#') Stays
+            li.attractions
+              a.top-section__stay-attraction(href='#') Attractions
+            li.night-icon
+              button.button-night(aria-label='dark/light')
+                svg.night
+                  use(href='#night')
+            li.myprofile-icon
+              button.button-myprofile(aria-label='my profile')
+                svg.my-profile
+                  use(href='#my-profile')
+            li.top-section__burger
+              span
+      h2.discovery-title
+        | Discover stays
+        br
+        | to live,work or just relax
+      .discovery-search
+        form.text-form-name(action='#')
+          label.label-name(for='text') Your destination or hotel name
+          input#text.discovery-input.discovery-input-name(type='text', name='name', placeholder='New York')
+        .discovery-filter
+          .discovery-wrap-form
+            form.text-form(action='#')
+              label.label-data(for='data') Check-in &mdash; Check-out
+              input#data.discovery-input.data-input(type='text', name='data', placeholder='Tue 15 Sept - Sat 19 Sept')
+            form.text-form(action='#')
+              label.label-people(for='people') .
+              input#people.discovery-input.people-input(
+                type='text',
+                name='people',
+                placeholder='2 Adults - 0 Children - 1 Room'
+              )
+          button.discovery__bottom(type='submit') Search
+      .discovery-container__media
+        .discovery-content__media
+          .hotel-name
+            svg
+              use(href='#icon-search')
+            .text-date Your destination or hotel name
+          .checks
+            .department
+              .department-row.text Check-in date
+              .department-row.text-date Tue 15 Sept 2020
+            .arrival
+              .arrival-row.text Check-out date
+              .arrival-row.text-date Sat 19 Sept 2020
+          .options
+            .adults
+              .text Adults
+              .text-date 2
+            .children
+              .text Children
+              .text-date 0
+            .rooms
+              .text Rooms
+              .text-date 1
+          button.discovery__bottom-media(type='submit') Search
+      .block-apps
+        a.block-google-play(href='#')
+          svg.google-play
+            use(href='#google-play')
+        a.block-app-store(href='#')
+          svg.app-store
+            use(href='#app-store')

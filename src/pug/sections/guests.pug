@@ -1,0 +1,82 @@
+mixin guests
+  section.container-my.guests
+    .guests__header
+      h2.guests-title.title Guests reviews
+    .guests__row
+      .guests-wrapper.guests-wrapper-media
+        .guests-icon
+          img(src=require('../../assets/images/bali.jpg'), alt='bali')
+          .guests-wrapper__price
+            .guests-wrapper__price-text From 250 USD
+        .guests-wrapper__name-score
+          .guests-name Ubud Bali Resort&amp;SPA
+          .guests-score 9,4
+        .guests-wrapper__country-reviews
+          .guests-country Bali, Indonesia
+          .guests-reviews 1324 reviews
+        .guests-wrapper__person
+          .person-account
+            svg.account
+              use(href='#account')
+          .person-name Hanna Ivanova
+          .person-country
+            img(src=require('../../assets/images/flag-ukr.png'), alt='flag Ukraine', aria-label='flag Ukraine')
+            |
+            | Ukraine
+        .guests-content
+          | Great location, really pleasant and clean rooms, but the thing that makes this such a good place to stay are the staff. All of the people are incredibly helpful and generous with their time and advice.
+      .guests-wrapper.guests-wrapper-rotterdam
+        .guests-icon
+          img(src=require('../../assets/images/rotterdam.jpg'), alt='rotterdam')
+          .guests-wrapper__price
+            .guests-wrapper__price-text From 40 USD
+        .guests-wrapper__name-score
+          .guests-name King Kong Hostel
+          .guests-score 8,9
+        .guests-wrapper__country-reviews
+          .guests-country Rotterdam, Netherlands
+          .guests-reviews 2016 reviews
+        .guests-wrapper__person
+          .person-account
+            svg.account
+              use(href='#account')
+          .person-name Adam Smith
+          .person-country
+            img(src=require('../../assets/images/flag-usa.png'), alt='flag USA', aria-label='flag USA')
+            |
+            | USA
+        .guests-content
+          | I&apos;ve been in this hostel for a month and here is the best hostel of all
+          br
+          |
+          | Excellent management of excellent and ethical staff and bedrooms Bathrooms are always clean and excellent
+          br
+          | Most importantly, those who work here are kind and good-natured.
+      .guests-wrapper.guests-wrapper-rokoko
+        .guests-icon
+          img(src=require('../../assets/images/ourika.jpg'), alt='ourika')
+          .guests-wrapper__price
+            .guests-wrapper__price-text From 100 USD
+        .guests-wrapper__name-score
+          .guests-name Rokoko Hotel
+          .guests-score 9.1
+        .guests-wrapper__country-reviews
+          .guests-country Ourika, Marocco
+          .guests-reviews 815 reviews
+        .guests-wrapper__person
+          .person-account
+            svg.account
+              use(href='#account')
+          .person-name Anika Messer
+          .person-country
+            img(src=require('../../assets/images/flagGerm.png'), alt='flag Germany', aria-label='flag Germany')
+            |
+            | Germany
+        .guests-content
+          | Efficient, friendly, professional, and appropriately attentive. Great hotel in a great location. Easy access to all the surrounding historical sites. Staff is fantastic. Will definitely stay at this location during my next stay in Marocco.
+      button.arrow-guests
+      button.circles-media
+        .circle
+        .circle
+        .circle
+        .circle
